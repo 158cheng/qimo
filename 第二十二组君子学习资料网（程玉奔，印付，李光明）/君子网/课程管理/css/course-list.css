@@ -1,0 +1,98 @@
+.head-flag{
+    padding: 20px 80px 10px 80px;
+}
+
+.head-flag p{
+    font-size: 12px;
+}
+
+.course-tab{
+    border: 1px solid #e5e5e5;
+    margin: 0 80px 15px 80px;
+}
+
+.course-tab .course-table-head,.course-tab .course-table-body{
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.course-tab .course-table-head .col-sm-1,.course-tab .course-table-body .col-sm-1{
+    text-align: center;
+    line-height: 30px;
+}
+
+.course-tab .course-table-head{
+    background-color: #f7f7f7;
+}
+.course-tab .course-table-head .col-sm-11 .course-tab-select{
+    line-height: 30px;
+    background-color: #f7f7f7;
+}
+
+.course-tab .course-table-head .col-sm-11 .course-tab-select .course-tab-select-item{
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.course-tab .course-table-head .col-sm-11 .course-tab-select .active,.course-tab .course-table-head .col-sm-11 .course-tab-select .course-tab-select-item:hover{
+    color: cornflowerblue;
+}
+
+.course-tab .course-table-body .col-sm-11 .course-tab-content .course-tab-content-item{
+    display: none;
+    line-height: 30px;
+}
+
+.course-tab .course-table-body .col-sm-11 .course-tab-content .course-tab-content-item a{
+    color: black;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.course-tab .course-table-body .col-sm-11 .course-tab-content .active{
+    display: block;
+}
+
+.course-include{
+    background-color: #f7f7f7;
+    line-height: 30px;
+    margin: 0 80px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.checkbox{
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+input[type=checkbox]{
+    margin-top: 9px;
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.thumbnail{
+    margin-bottom: 5px;
+}
+
+.row .col-sm-2 p:nth-child(2){
+    font-size: 12px;
+}
+
+.row .col-sm-2 p:nth-child(3){
+    color: red;
+}
+
+.ce{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    color: #bce8f1;
+}

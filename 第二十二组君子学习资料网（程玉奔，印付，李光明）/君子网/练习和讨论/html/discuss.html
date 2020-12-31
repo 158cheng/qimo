@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>在线讨论</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/discuss.css">
+</head>
+<body>
+    <div class="header">
+        <!--导航start-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!--小屏幕导航按钮和logo-->
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="../../index.html" class="navbar-brand">学习资料网</a>
+                </div>
+                <!--小屏幕导航按钮和logo-->
+                <!--导航-->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left" id="daohang">
+                        <!--<li><a href="course-buy.html">课程购买</a></li>-->
+                        <li><a href="../../index.html">主页</a></li>
+                        <li><a href="../../课程管理/html/course-list.html">课程列表</a></li>
+                        <li><a href="../../课程管理/html/course-play.html">继续学习</a></li>
+                        <li><a href="../../课程管理/html/course-buy.html">资料购买</a></li>
+                        <li><a href="../../课程管理/html/course-collect.html">课程收藏</a></li>
+                    </ul>
+                </div>
+                <!--导航-->
+            </div>
+        </nav>
+        <!--导航end-->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <div class="discuss-left">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../images/slider1.jpg" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img src="../images/slider2.png" alt="Second slide">
+                            </div>
+                            <div class="item">
+                                <img src="../images/slider3.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="myTab" class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#teacher" data-toggle="tab">老师答疑区</a></li>
+                        <li><a href="#student" data-toggle="tab">学生讨论区</a></li>
+                        <li><a href="test.html">在线测试</a></li>
+                        <li><a href="#">添加微信交流</a></li>
+                        <li><a href="#">扫码下载客服</a></li>
+                    </ul>
+                    <div class="weichat" style="display: none"><img src="../images/download.jpg" alt="扫码下载"></div>
+                    <div class="downlownapp" style="display: none"><img src="../images/weichat.jpg" alt="扫码添加"></div>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9 tab-content">
+                <!--老师-->
+                <div class="discuss-teacher tab-pane fade in active" id="teacher">
+                    <!-- partial:index.partial.html -->
+                    <div class="people-list" id="people-list">
+                        <div class="search">
+                            <input type="text" placeholder="search" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <ul class="list">
+                            <li class="clearfix">
+                                <img src="../images/teacher5.jpg" alt="avatar" />
+                                <div class="about">
+                                    <div class="name">田老师</div>
+                                    <div class="status">
+                                        <i class="fa fa-circle online"></i>在线
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <img src="../images/teacher1.jpg" alt="avatar" />
+                                <div class="about">
+                                    <div class="name">杨老师</div>
+                                    <div class="status">
+                                        <i class="fa fa-circle online"></i>在线
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <img src="../images/teacher2.jpg" alt="avatar" />
+                                <div class="about">
+                                    <div class="name">邓老师</div>
+                                    <div class="status">
+                                        <i class="fa fa-circle online"></i> 断线
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <img src="../images/teacher3.jpg" alt="avatar" />
+                                <div class="about">
+                                    <div class="name">聂老师</div>
+                                    <div class="status">
+                                        <i class="fa fa-circle online"></i> 离开
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <img src="../images/teacher4.jpg" alt="avatar" />
+                                <div class="about">
+                                    <div class="name">萧老师</div>
+                                    <div class="status">
+                                        <i class="fa fa-circle online"></i> 离开
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chat">
+                        <div class="chat-header clearfix">
+                            <img src="../images/teacher5.jpg" alt="avatar" />
+
+                            <div class="chat-about">
+                                <div class="chat-with">田老师</div>
+                                <div class="chat-num-messages">已有八条记录</div>
+                            </div>
+                            <i class="fa fa-star"></i>
+                        </div> <!-- end chat-header -->
+
+                        <div class="chat-history">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="message-data align-right">
+                                        <span class="message-data-time" >10:10</span> &nbsp; &nbsp;
+                                        <span class="message-data-name" >刘翔</span> <i class="fa fa-circle me"></i>
+
+                                    </div>
+                                    <div class="message other-message float-right">
+                                        你什么时候有空？
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="message-data">
+                                        <span class="message-data-name"><i class="fa fa-circle online"></i> 田老师</span>
+                                        <span class="message-data-time">10:12</span>
+                                    </div>
+                                    <div class="message my-message">
+                                        今天就有空啊！
+                                    </div>
+                                </li>
+
+                                <li class="clearfix">
+                                    <div class="message-data align-right">
+                                        <span class="message-data-time" >10:14</span> &nbsp; &nbsp;
+                                        <span class="message-data-name" >刘翔</span> <i class="fa fa-circle me"></i>
+
+                                    </div>
+                                    <div class="message other-message float-right">
+                                        那我们今天能见一面吗
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="message-data">
+                                        <span class="message-data-name"><i class="fa fa-circle online"></i> 田老师</span>
+                                        <span class="message-data-time">10:20</span>
+                                    </div>
+                                    <div class="message my-message">
+                                        那就下午一点整吧
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div> <!-- end chat-history -->
+
+                        <div class="chat-message clearfix">
+                            <textarea name="message-to-send" id="message-to-send" placeholder ="输入消息" rows="3"></textarea>
+
+                            <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-file-image-o"></i>
+
+                            <button>发送</button>
+
+                        </div> <!-- end chat-message -->
+
+                    </div> <!-- end chat -->
+                </div>
+                <!--学生-->
+                <div class="discuss-student tab-pane fade" id="student">
+                    <div class="right-head clearfix">
+                        <h2 class="navbar-left">讨论区</h2>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                    </div>
+                    <p class="head-info">欢迎大家来到讨论区！本讨论区供各位同学就课程问题进行交流学习。请同学们认真阅读下面的【讨论区使用规则】，然后再进行相关发表，谢谢！</p>
+                    <a href="#Modal" role="button" class="btn-lg btn-success btn-submit" data-toggle="modal">发表主题</a>
+                    <!-- 模态框（Modal） -->
+                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title" id="myModalLabel">发起新主题</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>标题</p>
+                                    <input type="text" placeholder="标题"/>
+                                    <p>内容</p>
+                                    <input type="text" placeholder="请输入内容"/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">提交更改</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    <div class="content">
+                        <div class="main-head clearfix">
+                            <h3 class="navbar-left">全部讨论</h3>
+                            <div class="btn-group btn-group-sm navbar-right">
+                                <button type="button" class="btn btn-default active">最新发表</button>
+                                <button type="button" class="btn btn-default">最后回复</button>
+                                <button type="button" class="btn btn-default">投票数</button>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="tab">
+                                <p class="title">老师中医神经衰弱当如何去分析治疗？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">小儿食指络脉左右手的意义？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">肝硬化腹水导致肝性脑病的失神应该如何治疗？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">中医气功是否存在？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">生理期仍然可服用吗？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">通过切诊怎样判断脉象？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">老师好北方夏天不出汗，去南方上海会出汗，正常吗？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">老师中医神经衰弱当如何去分析治疗？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">老师，切诊的内容哪里有？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                            <div class="tab">
+                                <p class="title">老师中医神经衰弱当如何去分析治疗？</p>
+                                <span class="tab-text"><span class="name">沧笙mooc37 </span><span class="date">于2019年12月03日发表</span></span>
+                                <span class="tab-info"><span class="watch">浏览：16</span><span class="reply">回复：1</span><span class="vote">投票：0</span></span>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部栏-->
+    <div class="cloud-banner">
+        <div class="cloud-bubble-one"></div>
+        <div class="cloud-bubble-two"></div>
+        <div class="cloud-bubble-three"></div>
+        <div class="cloud-bubble-text">为您提供全面的尊贵听课服务</div>
+        <div class="cloud-bubble-link">
+            <a href="#">免费注册</a>
+        </div>
+    </div>
+    <div class="cloud-footer">
+        <div class="cloud-footer-box">
+            <div class="cloud-footer-feature">
+                <ul class="clearfix">
+                    <li class="feature-item001">
+                        <a href="#">
+                            <span>7*24小时服务支持</span>
+                        </a>
+                    </li>
+                    <li class="feature-item002">
+                        <a href="#">
+                            <span>0元试听</span>
+                        </a>
+                    </li>
+                    <li class="feature-item003">
+                        <a href="#">
+                            <span>课程不满意100倍赔偿</span>
+                        </a>
+                    </li>
+                    <li class="feature-item004">
+                        <a href="#">
+                            <span>课程3天无理由退款</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cloud-footer-nav clearfix">
+                <div class="cloud-footer-nav-logo">
+                    <div class="cloud-comm">
+                        <div class="cloud-comm-logo">
+                            <span></span>
+                        </div>
+                        <div class="cloud-info">
+                            <p>学习资料网</p>
+                            <p>TEl:010-888-4000 (7x24h)</p>
+                        </div>
+                    </div>
+                    <div class="cloud-share">
+                        <p class="wei-xin">
+                            <span class="corner wx-corner"></span>
+                        </p>
+                        <p class="wei-bo">
+                            <span class="corner wx-corner"></span>
+                        </p>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-blog"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-wei"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-qq"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cloud-footer-nav-list clearfix">
+                    <ul>
+                        <li class="list-title">产品与服务
+                        </li>
+                        <li>
+                            <a href="#">前沿/区块连/人工智能</a>
+                        </li>
+                        <li>
+                            <a href="#">服务器托管</a>
+                        </li>
+                        <li>
+                            <a href="#">前端/小程序/JS</a>
+                        </li>
+                        <li>
+                            <a href="#">后端/JAVA/Python</a>
+                        </li>
+                        <li>
+                            <a href="#">运维/测试/数据库</a>
+                        </li>
+                        <li>
+                            <a href="#">移动/Android/iOS</a>
+                        </li>
+                        <li>
+                            <a href="#">云计算/大数据/容器</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">帮助与支持
+                        </li>
+                        <li>
+                            <a href="#">管理控制台</a>
+                        </li>
+                        <li>
+                            <a href="#">新技术查询</a>
+                        </li>
+                        <li>
+                            <a href="#">课程开课申请</a>
+                        </li>
+                        <li>
+                            <a href="#">课程控制台</a>
+                        </li>
+                        <li>
+                            <a href="#">优化与提升</a>
+                        </li>
+                        <li>
+                            <a href="#">课程售卖</a>
+                        </li>
+                        <li>
+                            <a href="#">支持计划</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">关于我们
+                        </li>
+                        <li>
+                            <a href="#">公司简介</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <a href="#">发展历程</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻动态</a>
+                        </li>
+                        <li>
+                            <a href="#">校园招聘</a>
+                        </li>
+                        <li>
+                            <a href="#">友情链接</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">其他
+                        </li>
+                        <li>
+                            <a href="#">开发者中心</a>
+                        </li>
+                        <li>
+                            <a href="#">开发者课堂</a>
+                        </li>
+                        <li>
+                            <a href="#">考试认证</a>
+                        </li>
+                        <li>
+                            <a href="#">开放实验室</a>
+                        </li>
+                        <li>
+                            <a href="#">举报中心</a>
+                        </li>
+                        <li>
+                            <a href="#">定价</a>
+                        </li>
+                        <li>
+                            <a href="#">意见反馈</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cloud-copyright cloud-copyright-about">
+            <p>Copyright © 2019-2020 www.junzi.com. All Rights Reserved. 君子资料网版权所有</p>
+            <p>
+                《中华人民共和国网络业务经营许可证》京ICP备5201314号-3 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5201314号-3</a>
+                地址：重庆市永川区重庆纹理学院红河校区A区
+
+            </p>
+        </div>
+    </div>
+
+
+    <script id="message-template" type="text/x-handlebars-template">
+        <li class="clearfix">
+            <div class="message-data align-right">
+                <span class="message-data-time" >{{time}}</span> &nbsp; &nbsp;
+                <span class="message-data-name" >刘翔</span> <i class="fa fa-circle me"></i>
+            </div>
+            <div class="message other-message float-right">
+                {{messageOutput}}
+            </div>
+        </li>
+    </script>
+
+    <script id="message-response-template" type="text/x-handlebars-template">
+        <li>
+            <div class="message-data">
+                <span class="message-data-name"><i class="fa fa-circle online"></i>田老师</span>
+                <span class="message-data-time">{{time}}</span>
+            </div>
+            <div class="message my-message">
+                {{response}}
+            </div>
+        </li>
+    </script>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src='../js/handlebars.min.js'></script>
+    <script src='../js/list.min.js'></script>
+    <script  src="../js/script.js"></script>
+    <script type="text/javascript">
+
+        $(".icon-blog").mouseenter(function() {
+            $(".wei-bo").show()
+        }).mouseleave(function() {
+            $(".wei-bo").hide()
+        });
+        $(".icon-wei").mouseenter(function() {
+            $(".wei-xin").show()
+        }).mouseleave(function() {
+            $(".wei-xin").hide()
+        });
+
+
+        $("#myTab").children('li').eq(3).bind('mouseover',function () {
+            $(".weichat").show();
+        }).bind('mouseout',function () {
+            $(".weichat").hide();
+        })
+        $("#myTab").children('li').eq(4).bind('mouseover',function () {
+            $(".downlownapp").show();
+        }).bind('mouseout',function () {
+            $(".downlownapp").hide();
+        })
+    </script>
+</body>
+</html>

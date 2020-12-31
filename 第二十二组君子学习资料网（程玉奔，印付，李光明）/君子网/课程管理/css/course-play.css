@@ -1,0 +1,344 @@
+section{
+    position: relative;
+}
+
+.live-area{
+    background-color: #949494;  /*视屏背景色*/
+    padding-right: 40px;
+}
+
+.live-area .live-pre{
+    position: relative;
+    padding: 50px 0 20px 190px;
+    color: white;
+}
+
+.live-area .live-pre p{
+    font-size: 13px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.live-area .live-pre .live-pre-cricle-big{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #343f4b;
+    left: 150px;
+    top: 45px;
+}
+
+.live-area .live-pre .live-pre-cricle-big .live-pre-cricle-small{
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 6px;
+    margin-top: 6px;
+    position: relative;
+}
+
+.live-area .live-pre .live-pre-cricle-big .live-pre-cricle-small:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: #343f4b;
+    left: 7px;
+    top: 18px;
+}
+
+.live-area .live-pre .live-pre-cricle-big .live-pre-cricle-small:after{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: #343f4b;
+    left: 7px;
+    top: -30px;
+}
+
+.live-area .live-pre .live-pre-ms{
+    position: absolute;
+    background-color: #343f4b;
+    left: 90px;
+    font-size: 12px;
+    padding: 2px 6px 2px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top:49px;
+}
+
+.live-area .live-pre .live-pre-button{
+    position: absolute;
+    background-color: #343f4b;
+    width: 40px;
+    border: none;
+    left: 145px;
+    top:3px
+}
+
+.live-area .live-next{
+    position: relative;
+    min-height: 60px;
+}
+
+.live-area .live-next:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 22px;
+    background-color: #343f4b;
+    left: 163px;
+    top: -5px;
+}
+
+.live-area .live-next .live-next-button{
+    position: absolute;
+    background-color: #343f4b;
+    width: 40px;
+    border: none;
+    left: 145px;
+    color: white;
+    top: 16px;
+}
+
+.live-area .live-next .live-next-buttonGroup{
+    float: right;
+}
+
+.live-area .live-next .live-next-buttonGroup button{
+    background-color: #1667ac;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.live-area .live-content{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.live-area .live-content .live-content-container{
+    position: relative;
+}
+
+.live-area .live-content .live-content-container .live-canvas{
+    width: 100%;
+}
+
+/*.live-area .live-content .live-content-container .live-mengban{*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*top: -6px;*/
+    /*background-image: url("../images/mengban.jpg");*/
+    /*background-size: 100% 100%;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.live-area .live-content .live-content-container .live-mengban .live-mengban-time{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: relative;*/
+/*}*/
+
+/*.live-area .live-content .live-content-container .live-mengban .live-mengban-time .live-mengban-ydTime{*/
+    /*margin-top: 20px;*/
+    /*color: #828180;*/
+    /*font-size: 30px;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*.live-area .live-content .live-content-container .live-mengban .live-mengban-time .live-mengban-DJS{*/
+    /*color: red;*/
+    /*font-size: 30px;*/
+    /*font-weight: bold;*/
+/*}*/
+
+section>.active{
+    padding-right: 400px;
+}
+
+section>.live-href{
+    position: absolute;
+    width: 360px;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+section>.live-href>.live-href-title{    /*注册师背景色*/
+    min-height: 80px;
+    background-color: #bdbebd;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+section>.live-href>.live-href-title p:nth-child(1){
+    margin: 0;
+}
+
+section>.live-href>.live-href-title>.live-href-title-button{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: -35px;
+    top:22px;
+    line-height: 35px;
+    padding-left: 5px;
+    background-color: #bdbebd;  /*收缩背景色*/
+    border: none;
+    outline: none;
+}
+
+section>.live-href>.live-href-list-tab{
+    background-color: #a9a9a9;  /*卡片背景色*/
+    height: calc(100% - 80px);
+    position: relative;
+    overflow: hidden;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-tab-buttonList{
+    border-bottom: 1px solid #2e3842;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-tab-buttonList>.live-href-list-tab-button{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-tab-buttonList>.active:after{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom:0;
+    border-bottom: 2px solid #1667ac;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-container{
+    width: 100%;
+    height: calc(100% - 52px);
+    position: relative;
+    overflow-y: auto;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-container>.live-href-list-tab-item{
+    display: none;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-container>.active{
+    display: block;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-container::-webkit-scrollbar{
+    width: 5px;
+    height: auto;
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-container::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
+}
+
+section>.live-href>.live-href-list-tab>.live-href-list-container::-webkit-scrollbar-track{
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.live-item{
+    position: relative;
+    overflow: hidden;
+}
+
+.live-item>.left{
+    float: left;
+    width: calc(100% - 100px);
+    padding-left: 40px;
+    height: 85px;
+}
+
+.live-item>.left p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ffffff; /*列表字体颜色*/
+}
+
+.active>.left p{
+    color: #1667ac;
+}
+
+.live-item>.left p:nth-child(1){
+    margin-top: 20px;
+}
+
+.live-item>.right{
+    float: left;
+    width: 98px;
+    height: 85px;
+    text-align: center;
+}
+
+.live-item>.right>button{   /*即将开始按钮颜色*/
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.active>.right>button{
+    background-color: #1667ac;
+    color: white;
+}
+
+.live-item:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 20px;
+    border-left: 1px solid #89898a;
+}
+
+.live-item:after{
+    content: '●';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 8px;
+    top: 30px;
+    font-size: 40px;
+    line-height: 28px;
+    background-color: #a9a9a9;  /*列表圆点背景色*/
+    color:#89898a ;
+}
+
+.ce{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    color: #bce8f1;
+}

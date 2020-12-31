@@ -1,0 +1,1567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>君子主页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="主页/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="主页/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="主页/css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->
+	<link href="主页/css/ken-burns.css" rel="stylesheet" type="text/css" media="all" /> <!-- banner slider -->
+	<link href="主页/css/animate.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="主页/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"> <!-- carousel slider -->
+	<link href="主页/css/font-awesome.css" rel="stylesheet">
+	<link href="主页/css/dibu.css" rel="stylesheet" type="text/css">
+	<script src="主页/js/jquery-2.2.3.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+	<!-- web-fonts -->
+	<script src="主页/js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel({
+				autoPlay: 3000, //Set AutoPlay to 3 seconds
+				items :4,
+				itemsDesktop : [640,5],
+				itemsDesktopSmall : [480,2],
+				navigation : true
+
+			});
+		});
+	</script>
+	<script src="主页/js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+
+			// Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+			$('.header-two').scrollToFixed();
+			// previous summary up the page.
+
+			var summaries = $('.summary');
+			summaries.each(function(i) {
+				var summary = $(summaries[i]);
+				var next = summaries[i + 1];
+
+				summary.scrollToFixed({
+					marginTop: $('.header-two').outerHeight(true) + 10,
+					zIndex: 999
+				});
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="主页/js/move-top.js"></script>
+	<script type="text/javascript" src="主页/js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+	<script src="主页/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="agileits-modal modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+	 aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel"><i class="fa fa-map-marker" aria-hidden="true"></i>地址</h4>
+			</div>
+			<div class="modal-body modal-body-sub">
+				<h5>选择您的所在学校及送货地址 </h5>
+				<select class="form-control bfh-states" data-country="US" data-state="CA">
+					<option value="">填写您的院校</option>
+					<option value="AL">重庆文理学院</option>
+					<option value="AK">北京大学</option>
+					<option value="AS">清华大学</option>
+					<option value="AZ">中国科学院大学</option>
+					<option value="AR">复旦大学</option>
+					<option value="AF">中国人民大学</option>
+					<option value="AA">浙江大学</option>
+					<option value="AC">上海交通大学</option>
+					<option value="AE">南京大学</option>
+					<option value="AM">武汉大学</option>
+					<option value="AP">中山大学</option>
+					<option value="CA">吉林大学</option>
+					<option value="CO">华中科技大学</option>
+					<option value="CT">天津大学</option>
+					<option value="DE">四川大学</option>
+					<option value="DC">南开大学</option>
+					<option value="FM">北京师范大学</option>
+					<option value="FL">西安交通大学</option>
+					<option value="GA">哈尔滨工业大学</option>
+					<option value="GU">中南大学</option>
+					<option value="HI">山东大学</option>
+				</select>
+				<input type="text" name="Name" placeholder="输入您的地址，便于资料送达" required="">
+				<button type="button" class="close2" data-dismiss="modal" aria-hidden="true">提交</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('#myModal88').modal('show');
+</script>
+<!-- header -->
+<div class="header">
+	<div class="w3ls-header"><!--header-one-->
+		<div class="w3ls-header-left">
+			<p><a href="#">天行健，君子以自强不息！</a></p>
+		</div>
+		<div class="w3ls-header-right">
+			<ul>
+				<li class="dropdown head-dpdn">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> 我的账户<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a data-toggle="modal" data-target="#myModal005">登录</a></li>
+						<li><a href="课程管理/html/course-play.html">我的订单</a></li>
+					</ul>
+				</li>
+				<li class="dropdown head-dpdn">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-percent" aria-hidden="true"></i>课程管理<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="课程管理/html/course-list.html">课程列表</a></li>
+						<li><a href="课程管理/html/course-play.html">继续学习</a></li>
+						<li><a href="课程管理/html/course-buy.html">资料购买</a></li>
+						<li><a href="课程管理/html/course-collect.html">课程收藏</a></li>
+					</ul>
+				</li>
+				<li class="dropdown head-dpdn">
+					<a href="关于我们/about.html" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i>关于我们</a>
+				</li>
+				<li class="dropdown head-dpdn">
+					<a href="笔记/html/personal1.html" class="dropdown-toggle"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>笔记管理</a>
+				</li>
+				<li class="dropdown head-dpdn">
+					<a href="练习和讨论/html/discuss.html" class="dropdown-toggle"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>在线交流</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="header-two"><!-- header-two -->
+		<div class="container">
+			<div class="header-logo">
+				<h1><a href="index.html"><span>君子</span> <i></i></a></h1>
+				<h6>博文达理</h6>
+			</div>
+			<div class="header-search">
+				<form action="#" method="post">
+					<input type="search" name="Search" placeholder="搜索你想查找的..." required="">
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+						<i class="fa fa-search" aria-hidden="true"> <a href="课程管理/html/course-list.html"></i>
+					</button>
+				</form>
+			</div>
+			<div class="header-cart">
+				<div class="my-account">
+					<a href="关于我们/about.html"><i class="fa fa-map-marker" aria-hidden="true"></i> 联系我们</a>
+				</div>
+				<div class="cart">
+					<form action="#" method="post" class="last">
+						<input type="hidden" name="cmd" value="_cart" />
+						<input type="hidden" name="display" value="1" />
+						<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="header-three">
+		<div class="container">
+			<div class="menu">
+				<div class="cd-dropdown-wrapper">
+					<a class="cd-dropdown-trigger" href="课程管理/html/course-play.html">课程分类</a>
+					<nav class="cd-dropdown">
+						<a href="课程管理/html/course-play.html" class="cd-close">Close</a>
+						<ul class="cd-dropdown-content">
+							<li><a href="课程管理/html/course-play.html">今日推荐</a></li>
+							<li class="has-children">
+								<a href="#">设计与欣赏</a>
+								<ul class="cd-secondary-dropdown is-hidden">
+									<li class="go-back"><a href="课程管理/html/course-play.html">哲学</a></li>
+									<li class="see-all"><a href="课程管理/html/course-play.html">历史学</a></li>
+									<li class="has-children">
+										<a href="#">设计学类</a>
+										<ul class="is-hidden">
+											<li class="go-back"><a href="#">有腔调的设计</a></li>
+											<li class="has-children">
+												<a href="#0">形态构成基础</a>
+												<ul class="is-hidden">
+													<li class="go-back"><a href="#"> </a></li>
+													<li><a href="课程管理/html/course-play.html">人体构造</a></li>
+													<li><a href="课程管理/html/course-play.html">形态美学</a></li>
+													<li><a href="课程管理/html/course-play.html">骨感美</a></li>
+												</ul>
+											</li>
+											<li> <a href="课程管理/html/course-play.html">动态构成</a> </li>
+											<li><a href="课程管理/html/course-play.html">爱与爱的世界</a></li>
+											<li><a href="课程管理/html/course-play.html">画说大师</a></li>
+											<li><a href="课程管理/html/course-play.html">简述设计</a></li>
+										</ul>
+									</li>
+									<li class="has-children">
+										<a href="#">观影与影视学类</a>
+										<ul class="is-hidden">
+											<li class="go-back"><a href="#">电竞解说 </a></li>
+											<li><a href="课程管理/html/course-play.html">定格动画“+”</a></li>
+											<li><a href="课程管理/html/course-play.html">摄像技术</a></li>
+											<li><a href="课程管理/html/course-play.html">新媒体纪录片创作</a></li>
+											<li><a href="课程管理/html/course-play.html">短视频创意与制做</a></li>
+											<li><a href="课程管理/html/course-play.html">影视动画创作</a></li>
+										</ul>
+									</li>
+									<li class="has-children">
+										<a href="#">经济学类</a>
+										<ul class="is-hidden">
+											<li class="go-back"><a href="#">西方经济学</a></li>
+											<li><a href="课程管理/html/course-play.html">金融学</a></li>
+											<li><a href="课程管理/html/course-play.html">微观经济学</a></li>
+											<li><a href="课程管理/html/course-play.html">财政学</a></li>
+											<li><a href="课程管理/html/course-play.html">货币银行学</a></li>
+											<li class="has-children">
+												<a href="#">经济管理</a>
+												<ul class="is-hidden">
+													<li class="go-back"><a href="#"> </a></li>
+													<li><a href="课程管理/html/course-play.html">能源经济 </a></li>
+													<li><a href="课程管理/html/course-play.html">资源与社会管理</a></li>
+													<li><a href="课程管理/html/course-play.html">商务经济学</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="has-children">
+										<a href="#">音乐与舞蹈</a>
+										<ul class="is-hidden">
+											<li class="go-back"><a href="#0">中国声乐艺术 </a></li>
+											<li class="has-children"><a href="#">从布鲁斯到中国风</a>
+												<ul class="is-hidden">
+													<li class="go-back"><a href="#0"> 音乐教育学</a></li>
+													<li><a href="课程管理/html/course-play.html">世界民族音乐</a></li>
+													<li><a href="课程管理/html/course-play.html">音乐鉴赏</a></li>
+													<li><a href="课程管理/html/course-play.html">从头学声乐</a></li>
+													<li><a href="课程管理/html/course-play.html">发音与标准</a></li>
+												</ul>
+											</li>
+											<li><a href="课程管理/html/course-play.html">中国古代音乐与舞蹈</a></li>
+											<li><a href="课程管理/html/course-play.html">广陵散</a></li>
+											<li><a href="课程管理/html/course-play.html">舞蹈形体教程</a></li>
+											<li><a href="课程管理/html/course-play.html">舞蹈知识手册</a></li>
+										</ul>
+									</li>
+									<li class="has-children">
+										<a href="#">艺术学理论</a>
+										<ul class="is-hidden">
+											<li class="go-back"><a href="#0">大画家传 </a></li>
+											<li><a href="课程管理/html/course-play.html">印象画派史</a></li>
+											<li><a href="课程管理/html/course-play.html">纽约琐记</a></li>
+											<li class="has-children"><a href="#">石涛与画语录研究</a>
+										</ul>
+									</li>
+									<li class="has-children">
+										<a href="#">艺术史论</a>
+										<ul class="is-hidden">
+											<li class="go-back"><a href="#0">艺术的故事</a></li>
+											<li><a href="课程管理/html/course-play.html">象派画家的光影彩色世界</a></li>
+											<li><a href="课程管理/html/course-play.html">揭开文艺复兴大师们的神秘面纱</a></li>
+											<li><a href="课程管理/html/course-play.html">詹森艺术史</a></li>
+										</ul>
+									</li>
+								</ul> <!-- .cd-secondary-dropdown -->
+							</li> <!-- .has-children -->
+							<a href="#">文学</a>
+							<ul class="cd-secondary-dropdown is-hidden">
+								<li class="go-back"><a href="#">Menu</a></li>
+								<li class="see-all"><a href="课程管理/html/course-play.html">All Fashion Stores</a></li>
+								<li class="has-children">
+									<a href="#">新闻传播学</a>
+									<ul class="is-hidden">
+										<li class="go-back"><a href="#">新闻学概论</a></li>
+										<li><a href="课程管理/html/course-play.html">新闻理论十讲</a></li>
+										<li><a href="课程管理/html/course-play.html">传播学教程</a></li>
+										<li><a href="课程管理/html/course-play.html">新闻：幻象的政治 </a></li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<a href="#">外国语言文学</a>
+									<ul class="is-hidden">
+										<li class="go-back"><a href="#">麦田里的守望者</a></li>
+										<li><a href="课程管理/html/course-play.html">追寻生命的意义 </a></li>
+										<li><a href="课程管理/html/course-play.html">梦的解析</a></li>
+										<li><a href="课程管理/html/course-play.html">宽容</a></li>
+										<li><a href="课程管理/html/course-play.html">厚黑学</a></li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<a href="#">中国语言文学类</a>
+									<ul class="is-hidden">
+										<li class="go-back"><a href="#">红学</a></li>
+										<li><a href="课程管理/html/course-play.html">三国那些事</a></li>
+										<li><a href="课程管理/html/course-play.html">我们一起学水浒</a></li>
+										<li><a href="课程管理/html/course-play.html">文人修养</a></li>
+										<li><a href="课程管理/html/course-play.html">文化石</a></li>
+										<li><a href="课程管理/html/course-play.html">传承文化</a></li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<a href="#">C与UNIX环境 </a>
+									<ul class="is-hidden">
+										<li class="go-back"><a href="#">C语言与生物医学信息处理</a></li>
+										<li><a href="课程管理/html/course-play.html">半导体变流技术 </a></li>
+										<li><a href="课程管理/html/course-play.html">半导体专业实验 </a></li>
+										<li><a href="课程管理/html/course-play.html">薄膜光学 </a></li>
+										<li class="has-children">
+											<a href="#">泵与水机 </a>
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"> </a></li>
+												<li><a href="课程管理/html/course-play.html">编译方法</a></li>
+												<li><a href="课程管理/html/course-play.html">材料的力学性能测试</a></li>
+												<li><a href="课程管理/html/course-play.html">并行算法</a></li>
+												<li><a href="课程管理/html/course-play.html">dBASE Ⅲ课程设计</a></li>
+											</ul>
+										</li>
+										<li><a href="课程管理/html/course-play.html">PASCAL大型作业</a></li>
+										<li><a href="课程管理/html/course-play.html">X射线与电镜</a></li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<a href="#">变电站的微机检测与控制</a>
+									<ul class="is-hidden">
+										<li class="go-back"><a href="#">变分法与张量</a></li>
+										<li><a href="课程管理/html/course-play.html">表面活性物质</a></li>
+										<li><a href="课程管理/html/course-play.html">财务成本管理</a></li>
+										<li><a href="课程管理/html/course-play.html">财政与金融</a></li>
+										<li><a href="课程管理/html/course-play.html">操作系统 </a></li>
+										<li><a href="课程管理/html/course-play.html">操作系统原理</a></li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<a href="课程管理/html/course-play.html">测试与信号变换处理</a>
+									<ul class="is-hidden">
+										<li class="go-back"><a href="#">产业组织学</a></li>
+										<li><a href="课程管理/html/course-play.html">超导磁体及应用</a></li>
+										<li><a href="课程管理/html/course-play.html">超精微细加工</a></li>
+										<li><a href="课程管理/html/course-play.html">城市规划原理</a></li>
+										<li><a href="课程管理/html/course-play.html">齿轮啮合原理</a></li>
+										<li><a href="课程管理/html/course-play.html">齿轮啮合原理</a></li>
+									</ul>
+								</li>
+							</ul> <!-- .cd-secondary-dropdown -->
+							<li><a href="sitemap.html">机械与应用</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="move-text">
+				<div class="marquee"><a href="主页/offers.html"> 勤学如春起之苗，不见其增，只有所长。辍学如磨刀之石，不见其增，日有所亏...... <span>要想成为强乾，决不能绕过挡道的荆棘也不能回避风雨的冲刷...... </span> <span> 生命之灯因热情而点燃，生命之舟因拼搏而前行......</span></a></div>
+				<script type="text/javascript" src="主页/js/jquery.marquee.min.js"></script>
+				<script>
+					$('.marquee').marquee({ pauseOnHover: true });
+					//@ sourceURL=pen.js
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //header -->
+<!-- banner -->
+<div class="banner">
+	<div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="主页/images/5.jpg" alt="" class="img-responsive" />
+				<div class="carousel-caption kb_caption kb_caption_right">
+					<h3 data-animation="animated flipInX">固定 <span>50%</span>折扣</h3>
+					<h4 data-animation="animated flipInX">优惠仅限今天！</h4>
+				</div>
+			</div>
+			<div class="item">
+				<img src="主页/images/3.jpg" alt="" class="img-responsive" />
+				<div class="carousel-caption kb_caption kb_caption_right">
+					<h3 data-animation="animated fadeInDown">最新精品课程</h3>
+					<h4 data-animation="animated fadeInUp">助你走上人生巅峰</h4>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="主页/images/8.jpg" alt="" class="img-responsive"/>
+				<div class="carousel-caption kb_caption kb_caption_center">
+					<h3 data-animation="animated fadeInLeft">学习助力</h3>
+					<h4 data-animation="animated flipInX">免费课程只为等待你</h4>
+				</div>
+			</div>
+
+		</div>
+		<a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+			<span class="fa fa-angle-left kb_icons" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+			<span class="fa fa-angle-right kb_icons" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<script src="主页/js/custom.js"></script>
+</div>
+<div class="welcome">
+	<div class="container">
+		<div class="welcome-info">
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				<ul id="myTab" class=" nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" >
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+						<h5>计算科学</h5>
+					</a></li>
+					<li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab">
+						<i class="fa fa-female" aria-hidden="true"></i>
+						<h5>人文修养</h5>
+					</a></li>
+					<li role="presentation"><a href="#james" role="tab" id="james-tab" data-toggle="tab">
+						<i class="fa fa-gift" aria-hidden="true"></i>
+						<h5>媒体营销</h5>
+					</a></li>
+					<li role="presentation"><a href="#decor" role="tab" id="decor-tab" data-toggle="tab">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<h5>建筑工程</h5>
+					</a></li>
+					<li role="presentation"><a href="#sports" role="tab" id="sports-tab" data-toggle="tab">
+						<i class="fa fa-motorcycle" aria-hidden="true"></i>
+						<h5>机械科技</h5>
+					</a></li>
+				</ul>
+				<div class="clearfix"> </div>
+				<h3 class="w3ls-title">精品强推</h3>
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+						<div class="tabcontent-grids">
+							<div id="owl-demo" class="owl-carousel">
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Audio speaker" />
+												<input type="hidden" name="amount" value="200.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>Sale</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Refrigerator" />
+												<input type="hidden" name="amount" value="700.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Smart Phone" />
+												<input type="hidden" name="amount" value="300.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Digital Camera"/>
+												<input type="hidden" name="amount" value="100.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Audio speaker" />
+												<input type="hidden" name="amount" value="200.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>Sale</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Refrigerator" />
+												<input type="hidden" name="amount" value="700.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Smart Phone" />
+												<input type="hidden" name="amount" value="300.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/e4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Digital Camera"/>
+												<input type="hidden" name="amount" value="100.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
+						<div class="tabcontent-grids">
+							<script>
+								$(document).ready(function() {
+									$("#owl-demo1").owlCarousel({
+
+										autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+										items :4,
+										itemsDesktop : [640,5],
+										itemsDesktopSmall : [414,4],
+										navigation : true
+
+									});
+
+								});
+							</script>
+							<div id="owl-demo1" class="owl-carousel">
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="主页/课程管理/html/course-play.html"><img src="主页/images/f1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="T Shirt" />
+												<input type="hidden" name="amount" value="10.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>20% <br> Off</h6></div>
+										<a href="主页/课程管理/html/course-play.html"><img src="主页/images/f2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Women Sandal" />
+												<input type="hidden" name="amount" value="20.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="主页/课程管理/html/course-play.html"><img src="主页/images/f3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Jewellery" />
+												<input type="hidden" name="amount" value="60.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="主页/课程管理/html/course-play.html"><img src="主页/images/f4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Party dress" />
+												<input type="hidden" name="amount" value="15.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="主页/课程管理/html/course-play.html"><img src="主页/images/f1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="T Shirt" />
+												<input type="hidden" name="amount" value="10.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>20% <br> Off</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/f2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Women Sandal" />
+												<input type="hidden" name="amount" value="20.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/f3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Jewellery" />
+												<input type="hidden" name="amount" value="60.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/f4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Party dress" />
+												<input type="hidden" name="amount" value="15.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="james" aria-labelledby="james-tab">
+						<div class="tabcontent-grids">
+							<script>
+								$(document).ready(function() {
+									$("#owl-demo2").owlCarousel({
+
+										autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+										items :4,
+										itemsDesktop : [640,5],
+										itemsDesktopSmall : [414,4],
+										navigation : true
+
+									});
+
+								});
+							</script>
+							<div id="owl-demo2" class="owl-carousel">
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Coffee Mug" />
+												<input type="hidden" name="amount" value="14.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>20% <br> Off</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Teddy bear" />
+												<input type="hidden" name="amount" value="20.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>Sale</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Chocolates" />
+												<input type="hidden" name="amount" value="60.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Gift Card" />
+												<input type="hidden" name="amount" value="22.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Coffee Mug" />
+												<input type="hidden" name="amount" value="14.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>20% <br> Off</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Teddy bear" />
+												<input type="hidden" name="amount" value="20.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>Sale</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Chocolates" />
+												<input type="hidden" name="amount" value="60.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/p4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Gift Card" />
+												<input type="hidden" name="amount" value="22.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="decor" aria-labelledby="decor-tab">
+						<div class="tabcontent-grids">
+							<script>
+								$(document).ready(function() {
+									$("#owl-demo3").owlCarousel({
+
+										autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+										items :4,
+										itemsDesktop : [640,5],
+										itemsDesktopSmall : [414,4],
+										navigation : true
+
+									});
+
+								});
+							</script>
+							<div id="owl-demo3" class="owl-carousel">
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>Sale</h6></div>
+										<a href="products3.html"><img src="主页/images/h1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Wall Clock" />
+												<input type="hidden" name="amount" value="80.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>10%<br>Off</h6></div>
+										<a href="products3.html"><img src="主页/images/h2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Plants & Vases" />
+												<input type="hidden" name="amount" value="40.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="products3.html"><img src="主页/images/h3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Queen Size Bed" />
+												<input type="hidden" name="amount" value="250.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="products3.html"><img src="主页/images/h4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="flower pot" />
+												<input type="hidden" name="amount" value="30.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>Sale</h6></div>
+										<a href="products3.html"><img src="主页/images/h1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Wall Clock" />
+												<input type="hidden" name="amount" value="80.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>10%<br>Off</h6></div>
+										<a href="products3.html"><img src="主页/images/h2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Plants & Vases" />
+												<input type="hidden" name="amount" value="40.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="products3.html"><img src="主页/images/h3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Queen Size Bed" />
+												<input type="hidden" name="amount" value="250.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="products3.html"><img src="主页/images/h4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="flower pot" />
+												<input type="hidden" name="amount" value="30.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="sports" aria-labelledby="sports-tab">
+						<div class="tabcontent-grids">
+							<script>
+								$(document).ready(function() {
+									$("#owl-demo4").owlCarousel({
+
+										autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+										items :4,
+										itemsDesktop : [640,5],
+										itemsDesktopSmall : [414,4],
+										navigation : true
+
+									});
+								});
+							</script>
+							<div id="owl-demo4" class="owl-carousel">
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Roller Skates"/>
+												<input type="hidden" name="amount" value="180.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Football"/>
+												<input type="hidden" name="amount" value="70.00"/>
+												<button type="submit" class="w3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>20% <br>Off</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Nylon Shuttle" />
+												<input type="hidden" name="amount" value="56.00"/>
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Cricket Kit" />
+												<input type="hidden" name="amount" value="80.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>New</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s1.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Roller Skates"/>
+												<input type="hidden" name="amount" value="180.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s2.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Football"/>
+												<input type="hidden" name="amount" value="70.00"/>
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<div class="new-tag"><h6>20% <br>Off</h6></div>
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s3.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Nylon Shuttle" />
+												<input type="hidden" name="amount" value="56.00"/>
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="glry-w3agile-grids agileits">
+										<a href="课程管理/html/course-play.html"><img src="主页/images/s4.png" alt="img"></a>
+										<div class="view-caption agileits-w3layouts">
+											<h4><a href="课程管理/html/course-play.html">大学生计算与信息化素养</a></h4>
+											<p>本课程是大学非计算机专业学生的计算机通识必修课</p>
+											<h5>600</h5>
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart" />
+												<input type="hidden" name="add" value="1" />
+												<input type="hidden" name="w3ls_item" value="Cricket Kit" />
+												<input type="hidden" name="amount" value="80.00" />
+												<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //welcome -->
+<!--底部栏start-->
+<div class="cloud-banner">
+	<div class="cloud-bubble-one"></div>
+	<div class="cloud-bubble-two"></div>
+	<div class="cloud-bubble-three"></div>
+	<div class="cloud-bubble-text">为您提供全面的尊贵听课服务</div>
+	<div class="cloud-bubble-link">
+		<a href="#">免费注册</a>
+	</div>
+</div>
+<div class="cloud-footer">
+	<div class="cloud-footer-box">
+		<div class="cloud-footer-feature">
+			<ul class="clearfix">
+				<li class="feature-item001">
+					<a href="#">
+						<span>7*24小时服务支持</span>
+					</a>
+				</li>
+				<li class="feature-item002">
+					<a href="#">
+						<span>0元试听</span>
+					</a>
+				</li>
+				<li class="feature-item003">
+					<a href="#">
+						<span>课程不满意100倍赔偿</span>
+					</a>
+				</li>
+				<li class="feature-item004">
+					<a href="#">
+						<span>课程3天无理由退款</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="cloud-footer-nav clearfix">
+			<div class="cloud-footer-nav-logo">
+				<div class="cloud-comm">
+					<div class="cloud-comm-logo">
+						<span></span>
+					</div>
+					<div class="cloud-info">
+						<p>学习资料网</p>
+						<p>TEl:010-888-4000 (7x24h)</p>
+					</div>
+				</div>
+				<div class="cloud-share">
+					<p class="wei-xin">
+						<span class="corner wx-corner"></span>
+					</p>
+					<p class="wei-bo">
+						<span class="corner wx-corner"></span>
+					</p>
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								<span class="icon-blog"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wei"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-qq"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-mail"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cloud-footer-nav-list clearfix">
+				<ul>
+					<li class="list-title">产品与服务
+					</li>
+					<li>
+						<a href="#">前沿/区块连/人工智能</a>
+					</li>
+					<li>
+						<a href="#">服务器托管</a>
+					</li>
+					<li>
+						<a href="#">前端/小程序/JS</a>
+					</li>
+					<li>
+						<a href="#">后端/JAVA/Python</a>
+					</li>
+					<li>
+						<a href="#">运维/测试/数据库</a>
+					</li>
+					<li>
+						<a href="#">移动/Android/iOS</a>
+					</li>
+					<li>
+						<a href="#">云计算/大数据/容器</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="list-title">帮助与支持
+					</li>
+					<li>
+						<a href="#">管理控制台</a>
+					</li>
+					<li>
+						<a href="#">新技术查询</a>
+					</li>
+					<li>
+						<a href="#">课程开课申请</a>
+					</li>
+					<li>
+						<a href="#">课程控制台</a>
+					</li>
+					<li>
+						<a href="#">优化与提升</a>
+					</li>
+					<li>
+						<a href="#">课程售卖</a>
+					</li>
+					<li>
+						<a href="#">支持计划</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="list-title">关于我们
+					</li>
+					<li>
+						<a href="#">公司简介</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+					<li>
+						<a href="#">加入我们</a>
+					</li>
+					<li>
+						<a href="#">发展历程</a>
+					</li>
+					<li>
+						<a href="#">新闻动态</a>
+					</li>
+					<li>
+						<a href="#">校园招聘</a>
+					</li>
+					<li>
+						<a href="#">友情链接</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="list-title">其他
+					</li>
+					<li>
+						<a href="#">开发者中心</a>
+					</li>
+					<li>
+						<a href="#">开发者课堂</a>
+					</li>
+					<li>
+						<a href="#">考试认证</a>
+					</li>
+					<li>
+						<a href="#">开放实验室</a>
+					</li>
+					<li>
+						<a href="#">举报中心</a>
+					</li>
+					<li>
+						<a href="#">定价</a>
+					</li>
+					<li>
+						<a href="#">意见反馈</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="cloud-copyright cloud-copyright-about">
+		<p>Copyright © 2019-2020 www.junzi.com. All Rights Reserved. 君子资料网版权所有</p>
+		<p>
+			《中华人民共和国网络业务经营许可证》京ICP备5201314号-3 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5201314号-3</a>
+			地址：重庆市永川区重庆纹理学院红河校区A区
+
+		</p>
+	</div>
+</div>
+<!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal005">开始演示模态框</button>-->
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal005" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">登录页面</h4>
+			</div>
+			<div class="modal-body">
+				<input type="text" id="username" placeholder="请输入用户名"><br>
+				<input type="text" id="password" placeholder="请输入密码">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary denglu">登录</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+<!--底部栏end-->
+<script src="js/minicart.js"></script>
+<script>
+	w3ls.render();
+
+	w3ls.cart.on('w3sb_checkout', function (evt) {
+		var items, len, i;
+
+		if (this.subtotal() > 0) {
+			items = this.items();
+
+			for (i = 0, len = items.length; i < len; i++) {
+				items[i].set('shipping', 0);
+				items[i].set('shipping2', 0);
+			}
+		}
+	});
+</script>
+<script src="js/jquery.knob.js"></script>
+<script src="js/jquery.throttle.js"></script>
+<script src="js/jquery.classycountdown.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#countdown1').ClassyCountdown({
+			end: '1388268325',
+			now: '1387999995',
+			labels: true,
+			style: {
+				element: "",
+				textResponsive: .5,
+				days: {
+					gauge: {
+						thickness: .10,
+						bgColor: "rgba(0,0,0,0)",
+						fgColor: "#1abc9c",
+						lineCap: 'round'
+					},
+					textCSS: 'font-weight:300; color:#fff;'
+				},
+				hours: {
+					gauge: {
+						thickness: .10,
+						bgColor: "rgba(0,0,0,0)",
+						fgColor: "#05BEF6",
+						lineCap: 'round'
+					},
+					textCSS: ' font-weight:300; color:#fff;'
+				},
+				minutes: {
+					gauge: {
+						thickness: .10,
+						bgColor: "rgba(0,0,0,0)",
+						fgColor: "#8e44ad",
+						lineCap: 'round'
+					},
+					textCSS: ' font-weight:300; color:#fff;'
+				},
+				seconds: {
+					gauge: {
+						thickness: .10,
+						bgColor: "rgba(0,0,0,0)",
+						fgColor: "#f39c12",
+						lineCap: 'round'
+					},
+					textCSS: ' font-weight:300; color:#fff;'
+				}
+
+			},
+			onEndCallback: function() {
+				console.log("Time out!");
+			}
+		});
+	});
+</script>
+<script>
+	$(function() {
+		$('#myModal005').modal('hide')
+	});
+	$(function () {
+		$('.denglu').click(function () {
+			var aa = $('#username').val();
+			var bb = $('#password').val();
+			if ( $.trim(aa)==$.trim('001') && $.trim(bb)==$.trim('201758234020')){
+				alert("登陆成功")
+				$('#myModal005').modal('hide')
+			}else {
+				alert("登录失败，请检查用户名和密码！")
+			}
+		})
+	})
+</script>
+<script src="js/jquery.menu-aim.js"> </script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程收藏</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/dibu.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/course-collect.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/course-collect.js"></script>
+</head>
+<body>
+<!--导航start-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../index.html" class="navbar-brand">学习资料网</a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" id="daohang">
+                <li><a href="course-buy.html">课程购买</a></li>
+                <li><a href="course-list.html">课程列表</a></li>
+                <li><a href="course-play.html">课程播放</a></li>
+                <li><a href="course-collect.html" style="color: red">课程收藏</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+    </div>
+</nav>
+<!--导航end-->
+<!--<div style="width: 100%;height: 91px"></div>-->
+
+<!--个人信息-->
+<div class="bg-other user-head-info" style="margin-top: 71px;">
+    <div class="user-info clearfix">
+        <div class="user-pic" data-is-fans="0" data-is-follows="">
+            <div class="user-pic-bg">
+                <img class="img" src="../images/toux.jpg" alt="">
+            </div><!--user-pic-big end-->
+        </div>
+        <div class="user-info-right">
+            <h3 class="user-name clearfix">
+                <span>悲莫悲兮生别离</span>
+            </h3>
+            <!--25-->
+            <p class="about-info">
+                <span>男</span>
+            </p>
+        </div>
+        <div class="study-info clearfix">
+            <div class="item follows">
+                <div class="u-info-learn" title="学习时长52小时48分" style="cursor:pointer;">
+                    <em>52h</em>
+                    <span>学习时长 </span>
+                </div>
+            </div>
+            <div class="item follows">
+                <a href="#"><em>1917</em></a>
+                <span>经验</span>
+            </div>
+            <div class="item follows">
+                <a href="#"><em>1</em></a>
+                <span>积分</span>
+            </div>
+            <div class="item follows">
+                <a href="#"><em>0</em></a>
+                <span>关注</span>
+            </div>
+            <div class="item follows">
+                <a href="#"><em>0</em></a>
+                <span>粉丝</span>
+            </div>
+            <div class="item follows"><a href="#" class="set-btn"><i class="icon-set"></i>个人设置</a></div>
+
+        </div><!--.study-info end-->
+    </div><!-- .user-info end -->
+</div>
+
+<!--收藏start-->
+<div class="floor-course">
+    <div class="floor-content">
+        <div class="floor-side-right">
+            <div class="hd floor-side-list">
+                <ul>
+                    <li class="on">全部</li>
+                    <li>免费课程</li>
+                    <li>实战课程</li>
+                    <li>就业班</li>
+                    <li>微课</li>
+                </ul>
+            </div>
+            <div class="bd floor-side-body">
+                <ul>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q1.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">Java入门第二季</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学75%</span>
+                                        <span class="i-mid span-common">用时5显示59分</span>
+                                        <span class="i-right span-common">学习至4.01Java中的多态</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;4</span>
+                                        <span class="i-mid span-common">代码&nbsp;7</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q2.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">Sass入门篇</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学0%</span>
+                                        <span class="i-mid span-common">用时0分</span>
+                                        <span class="i-right span-common">学习至1.01什么是css预处理器？</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;0</span>
+                                        <span class="i-mid span-common">代码&nbsp;0</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q3.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">基于bootstrap的网页开发</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学32%</span>
+                                        <span class="i-mid span-common">用时4小时30分</span>
+                                        <span class="i-right span-common">学习至3.11菜单定位及总结</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;0</span>
+                                        <span class="i-mid span-common">代码&nbsp;0</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q4.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">C语言入门</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学100%</span>
+                                        <span class="i-mid span-common">用时36小时59分</span>
+                                        <span class="i-right span-common">学习至1.02C程序结构</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;2</span>
+                                        <span class="i-mid span-common">代码&nbsp;58</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q5.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">c#开发轻松入门</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学3%</span>
+                                        <span class="i-mid span-common">用时6分</span>
+                                        <span class="i-right span-common">学习至1.04练习题</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;0</span>
+                                        <span class="i-mid span-common">代码&nbsp;0</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q2.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">Sass入门篇</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学0%</span>
+                                        <span class="i-mid span-common">用时0分</span>
+                                        <span class="i-right span-common">学习至1.01什么是css预处理器？</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;0</span>
+                                        <span class="i-mid span-common">代码&nbsp;0</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q1.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">Java入门第二季</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学75%</span>
+                                        <span class="i-mid span-common">用时5显示59分</span>
+                                        <span class="i-right span-common">学习至4.01Java中的多态</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;4</span>
+                                        <span class="i-mid span-common">代码&nbsp;7</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q5.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">c#开发轻松入门</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学3%</span>
+                                        <span class="i-mid span-common">用时6分</span>
+                                        <span class="i-right span-common">学习至1.04练习题</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;0</span>
+                                        <span class="i-mid span-common">代码&nbsp;0</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q4.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">C语言入门</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学100%</span>
+                                        <span class="i-mid span-common">用时36小时59分</span>
+                                        <span class="i-right span-common">学习至1.02C程序结构</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;2</span>
+                                        <span class="i-mid span-common">代码&nbsp;58</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-detail">
+                            <div class="detail-item">
+                                <div class="img-box">
+                                    <img src="../images/q3.jpg">
+                                </div>
+                                <div class="info-box">
+                                    <div class="title">
+                                        <span class="mian">免费课程</span>
+                                        <a href="#" class="er">基于bootstrap的网页开发</a>
+                                    </div>
+                                    <div class="study-info">
+                                        <span class="i-left span-common">已学32%</span>
+                                        <span class="i-mid span-common">用时4小时30分</span>
+                                        <span class="i-right span-common">学习至3.11菜单定位及总结</span>
+                                    </div>
+                                    <div class="catog-points">
+                                        <span class="span-common">笔记&nbsp;0</span>
+                                        <span class="i-mid span-common">代码&nbsp;0</span>
+                                        <span class="i-right span-common">问答&nbsp;0</span>
+                                        <div class="points-btn1">加入课表</div>
+                                        <a href="#" class="points-btn2">继续学习</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="none">
+                        <i class="iconfont">&#xe60e;</i>
+                        <p>您该没有学习实战课程，可以先<span>去找找课程</span> </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="none">
+                        <i class="iconfont">&#xe60e;</i>
+                        <p>您还没有参加任何就业班，可以先<span>去找找就业班课程</span> </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="none">
+                        <i class="iconfont">&#xe60e;</i>
+                        <p>您最近没有学习任何课程，可以先<span>去找找课程</span> </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--收藏end-->
+<div class="container" style="width: 100%">
+    <div class="row">
+        <h3 style="margin: 50px 50px">实战推荐</h3>
+        <div class="col-md-3">
+            <div class="yin">
+                <div class="tui-img">
+                    <img src="../images/s1.jpg">
+                </div>
+                <div class="tui">
+                    <div>微信小程序入门与实战 常用组件API开发技巧项目实战</div>
+                    <span style="font-weight: 600">￥149</span> &emsp;&emsp;&emsp;初级&emsp;&emsp;&emsp;<i class="iconfont icon-ren"></i>19163
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="yin">
+                <div class="tui-img">
+                    <img src="../images/s4.jpg">
+                </div>
+                <div class="tui">
+                    <div>Vue.js2.5+cube-ui重构饿了么App（经典再升级）</div>
+                    <span style="font-weight: 600">￥198.00</span> &emsp;&emsp;&emsp;中级&emsp;&emsp;&emsp;<i class="iconfont icon-ren"></i>8998
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="yin">
+                <div class="tui-img">
+                    <img src="../images/s2.jpg">
+                </div>
+                <div class="tui">
+                    <div>算法与数据结构--综合提升篇（c++版</div><br>
+                    <span style="font-weight: 600">￥166</span> &emsp;&emsp;&emsp;中级&emsp;&emsp;&emsp;<i class="iconfont icon-ren"></i>9061
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="yin">
+                <div class="tui-img">
+                    <img src="../images/s3.jpg">
+                </div>
+                <div class="tui">
+                    <div>全面系统python3入门+进阶 小白也能听懂 (万人甄选口碑好课)</div>
+                    <span style="font-weight: 600">￥366.00</span> &emsp;&emsp;&emsp;初级&emsp;&emsp;&emsp;<i class="iconfont icon-ren"></i>10152
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--底部栏-->
+<div class="cloud-banner" style="margin-top: 20px">
+    <div class="cloud-bubble-one"></div>
+    <div class="cloud-bubble-two"></div>
+    <div class="cloud-bubble-three"></div>
+    <div class="cloud-bubble-text">为您提供全面的尊贵听课服务</div>
+    <div class="cloud-bubble-link">
+        <a href="#">免费注册</a>
+    </div>
+</div>
+<div class="cloud-footer">
+    <div class="cloud-footer-box">
+        <div class="cloud-footer-feature">
+            <ul class="clearfix">
+                <li class="feature-item001">
+                    <a href="#">
+                        <span>7*24小时服务支持</span>
+                    </a>
+                </li>
+                <li class="feature-item002">
+                    <a href="#">
+                        <span>0元试听</span>
+                    </a>
+                </li>
+                <li class="feature-item003">
+                    <a href="#">
+                        <span>课程不满意100倍赔偿</span>
+                    </a>
+                </li>
+                <li class="feature-item004">
+                    <a href="#">
+                        <span>课程3天无理由退款</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cloud-footer-nav clearfix">
+            <div class="cloud-footer-nav-logo">
+                <div class="cloud-comm">
+                    <div class="cloud-comm-logo">
+                        <span></span>
+                    </div>
+                    <div class="cloud-info">
+                        <p>学习资料网</p>
+                        <p>TEl:010-888-4000 (7x24h)</p>
+                    </div>
+                </div>
+                <div class="cloud-share">
+                    <p class="wei-xin">
+                        <span class="corner wx-corner"></span>
+                    </p>
+                    <p class="wei-bo">
+                        <span class="corner wx-corner"></span>
+                    </p>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <span class="icon-blog"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-wei"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-qq"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-mail"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cloud-footer-nav-list clearfix">
+                <ul>
+                    <li class="list-title">产品与服务
+                    </li>
+                    <li>
+                        <a href="#">前沿/区块连/人工智能</a>
+                    </li>
+                    <li>
+                        <a href="#">服务器托管</a>
+                    </li>
+                    <li>
+                        <a href="#">前端/小程序/JS</a>
+                    </li>
+                    <li>
+                        <a href="#">后端/JAVA/Python</a>
+                    </li>
+                    <li>
+                        <a href="#">运维/测试/数据库</a>
+                    </li>
+                    <li>
+                        <a href="#">移动/Android/iOS</a>
+                    </li>
+                    <li>
+                        <a href="#">云计算/大数据/容器</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-title">帮助与支持
+                    </li>
+                    <li>
+                        <a href="#">管理控制台</a>
+                    </li>
+                    <li>
+                        <a href="#">新技术查询</a>
+                    </li>
+                    <li>
+                        <a href="#">课程开课申请</a>
+                    </li>
+                    <li>
+                        <a href="#">课程控制台</a>
+                    </li>
+                    <li>
+                        <a href="#">优化与提升</a>
+                    </li>
+                    <li>
+                        <a href="#">课程售卖</a>
+                    </li>
+                    <li>
+                        <a href="#">支持计划</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-title">关于我们
+                    </li>
+                    <li>
+                        <a href="#">公司简介</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="#">发展历程</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻动态</a>
+                    </li>
+                    <li>
+                        <a href="#">校园招聘</a>
+                    </li>
+                    <li>
+                        <a href="#">友情链接</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-title">其他
+                    </li>
+                    <li>
+                        <a href="#">开发者中心</a>
+                    </li>
+                    <li>
+                        <a href="#">开发者课堂</a>
+                    </li>
+                    <li>
+                        <a href="#">考试认证</a>
+                    </li>
+                    <li>
+                        <a href="#">开放实验室</a>
+                    </li>
+                    <li>
+                        <a href="#">举报中心</a>
+                    </li>
+                    <li>
+                        <a href="#">定价</a>
+                    </li>
+                    <li>
+                        <a href="#">意见反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cloud-copyright cloud-copyright-about" id="#top">
+        <p>Copyright © 2019-2020 www.junzi.com. All Rights Reserved. 君子资料网版权所有</p>
+        <p>
+            《中华人民共和国网络业务经营许可证》京ICP备5201314号-3 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5201314号-3</a>
+            地址：重庆市永川区重庆纹理学院红河校区A区
+
+        </p>
+    </div>
+</div>
+
+<a class="ce" href="#top">
+    <i class="iconfont" style="font-size: 25px">&#xe659;</i>
+</a>
+
+<script type="text/javascript">
+    $(".icon-blog").mouseenter(function() {
+        $(".wei-bo").show()
+    }).mouseleave(function() {
+        $(".wei-bo").hide()
+    });
+    $(".icon-wei").mouseenter(function() {
+        $(".wei-xin").show()
+    }).mouseleave(function() {
+        $(".wei-xin").hide()
+    });
+</script>
+</body>
+</html>

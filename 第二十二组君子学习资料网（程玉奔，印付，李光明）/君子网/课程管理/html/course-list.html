@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程列表</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="../css/course-list.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/dibu.css">
+</head>
+<body>
+
+<!--导航start-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../index.html" class="navbar-brand">学习资料网</a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" id="daohang">
+                <li><a href="course-buy.html">课程购买</a></li>
+                <li><a href="course-list.html" style="color: red">课程列表</a></li>
+                <li><a href="course-play.html">课程播放</a></li>
+                <li><a href="course-collect.html">课程收藏</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+    </div>
+</nav>
+<!--导航end-->
+
+<section style="margin-top: 70px">
+    <div class="head-flag">
+        <p>全部课程 > 全部</p>
+    </div>
+    <div class="course-tab">
+        <div class="course-table-head">
+            <div class="col-sm-1">类别:</div>
+            <div class="col-sm-11">
+                <div class="course-tab-select">
+                    <a href="#" class="course-tab-select-item active" data-select="0">全部</a>
+                    <a href="#" class="course-tab-select-item" data-select="1">前端开发</a>
+                    <a href="#" class="course-tab-select-item" data-select="2">后端开发</a>
+                    <a href="#" class="course-tab-select-item" data-select="3">移动开发</a>
+                </div>
+            </div>
+        </div>
+        <div class="course-table-body">
+            <div class="col-sm-1">课程:</div>
+            <div class="col-sm-11">
+                <div class="course-tab-content">
+                    <div class="course-tab-content-item active">
+                        <a href="#">HTML/CSS</a>
+                        <a href="#"> JavaScript</a>
+                        <a href="#"> Vue.js</a>
+                        <a href="#"> React.JS</a>
+                        <a href="#">Django</a>
+                        <a href="#">大数据</a>
+                        <a href="#"> Kubernetes</a>
+                        <a href="#"> 自动化运维</a>
+                        <a href="#"> 功能测试</a>
+                        <a href="#">模型制作</a>
+                        <a href="#"> 动效动画</a>
+                        <a href="#"> 设计基础</a>
+                        <a href="#">APPUI设计</a>
+                        <a href="#">Unity 3D</a>
+                    </div>
+                    <div class="course-tab-content-item">
+                        <a href="#">HTML/CSS</a>
+                        <a href="#"> JavaScript</a>
+                        <a href="#">Vue.js</a>
+                        <a href="#"> React.JS</a>
+                        <a href="#">Angular</a>
+                        <a href="#">Node.js</a>
+                        <a href="#">WebApp</a>
+                    </div>
+                    <div class="course-tab-content-item">
+                        <a href="#"> SpringBoot</a>
+                        <a href="#"> Spring Cloud</a>
+                        <a href="#"> Python</a>
+                        <a href="#">Java</a>
+                    </div>
+                    <div class="course-tab-content-item">
+                        <a href="#">Android</a>
+                        <a href="#">iOS</a>
+                        <a href="#">React native</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="course-include">
+        <div class="col-sm-1">课程包含:</div>
+        <div class="col-sm-11">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">直播+回放
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">录播
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">练习题
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">退费
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">免费重学
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">在线答疑
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">微信答疑
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="case-container">
+        <div class="case-index-content">
+            <ul class="clearfix">
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img001.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-001.jpg" alt=""></div>
+                            <div class="case-info-title">Jetpack全组件实战</div>
+                            <div class="case-info-text">Jetpack是Google为解决Android开发碎片化，打造成熟健康生态圈提出的战略规划，
+                                是Google对Android未来提出的发展方向。众多Github开源库和各个大厂都在拥抱Jetpack，也是当今安卓面试必考的热点。</div>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img002.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-002.jpg" alt=""></div>
+                            <div class="case-info-title">全方位深入解析最新版SpringBoot源码</div>
+                            <div class="case-info-text">当下SpringBoot日渐取代SSM成为新项目首选框架。
+                                掌握SpringBoot源码将助你高效定位和解决问题，仿写SpringBoot源码将帮你养成规范的代码习惯，轻松应对高标准的企业开发与面试要求。</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img003.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-003.jpg" alt=""></div>
+                            <div class="case-info-title">编程必备基础 计算机组成原理+操作系统+计算机网络</div>
+                            <div class="case-info-text">讲师结合自己多年工作经验，总结出了这套更适合程序员的计算机基础知识课程，带你更快的补足编程必备基础知识</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img004.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-004.jpg" alt=""></div>
+                            <div class="case-info-title">再学JavaScript</div>
+                            <div class="case-info-text">本课涉及JavaScript ES6到10的语法教学，内容全面丰富，熟练掌握语法，
+                                很多依赖第三方库才能做到的事用原生JS寥寥几行代码就可迎刃而解。</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img005.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-005.jpg" alt=""></div>
+                            <div class="case-info-title">Java通用型支付+电商平台双系统实战</div>
+                            <div class="case-info-text">本课程将手把手带你实战双系统开发：全模块电商平台、
+                                通用型支付系统，打通SpringBoot2.x、MyBatis、MQ等技术栈知识壁垒</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img006.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-006.jpg" alt=""></div>
+                            <div class="case-info-title">深度解锁SpringCloud主流组件 一战解决微服务诸多难题</div>
+                            <div class="case-info-text">作为一门有深度的“SpringCloud”课程，本课中结合“猫眼”后台，
+                                不仅从零剖析开发人员必知必会的几大主流组件的高级特性，还会讲解在实际工作中遇到的诸多难题的解决方案</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img007.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-007.jpg" alt=""></div>
+                            <div class="case-info-title">Node.js+Koa2框架生态实战</div>
+                            <div class="case-info-text">课程为纯实战项目，从零模拟开发一个基本功能完备的微博系统（包括注册、登录、
+                                关注和取关，微博浏览、创建和回复，及 @ 关注人等各个功能），带你完成整个Koa2框架生态的综合技术实战</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="case-example-item">
+                    <a href="#">
+                        <img src="../images/img008.jpg" alt="" class="case-pad">
+                        <div class="case-item-info">
+                            <div class="case-info-logo"><img src="../images/logo-008.jpg" alt=""></div>
+                            <div class="case-info-title">Linux核心技能与应用</div>
+                            <div class="case-info-text">本课程不同以往，从培养兴趣开始循序渐进，零基础也能轻松入门。
+                                课程特别设计了云服务器安装CentOS等侧重实战内容，
+                                还原真实线上环境，提高开发效率，助你快速成为Linux高手。</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p style="text-align: center;font-size: 12px;padding: 10px 0"><a href="#">加载更多</a></p>
+</section>
+
+
+<!--底部栏-->
+<div class="cloud-banner" style="margin-top: 20px">
+    <div class="cloud-bubble-one"></div>
+    <div class="cloud-bubble-two"></div>
+    <div class="cloud-bubble-three"></div>
+    <div class="cloud-bubble-text">为您提供全面的尊贵听课服务</div>
+    <div class="cloud-bubble-link">
+        <a href="#">免费注册</a>
+    </div>
+</div>
+<div class="cloud-footer">
+    <div class="cloud-footer-box">
+        <div class="cloud-footer-feature">
+            <ul class="clearfix">
+                <li class="feature-item001">
+                    <a href="#">
+                        <span>7*24小时服务支持</span>
+                    </a>
+                </li>
+                <li class="feature-item002">
+                    <a href="#">
+                        <span>0元试听</span>
+                    </a>
+                </li>
+                <li class="feature-item003">
+                    <a href="#">
+                        <span>课程不满意100倍赔偿</span>
+                    </a>
+                </li>
+                <li class="feature-item004">
+                    <a href="#">
+                        <span>课程3天无理由退款</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cloud-footer-nav clearfix">
+            <div class="cloud-footer-nav-logo">
+                <div class="cloud-comm">
+                    <div class="cloud-comm-logo">
+                        <span></span>
+                    </div>
+                    <div class="cloud-info">
+                        <p>学习资料网</p>
+                        <p>TEl:010-888-4000 (7x24h)</p>
+                    </div>
+                </div>
+                <div class="cloud-share">
+                    <p class="wei-xin">
+                        <span class="corner wx-corner"></span>
+                    </p>
+                    <p class="wei-bo">
+                        <span class="corner wx-corner"></span>
+                    </p>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <span class="icon-blog"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-wei"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-qq"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-mail"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cloud-footer-nav-list clearfix">
+                <ul>
+                    <li class="list-title">产品与服务
+                    </li>
+                    <li>
+                        <a href="#">前沿/区块连/人工智能</a>
+                    </li>
+                    <li>
+                        <a href="#">服务器托管</a>
+                    </li>
+                    <li>
+                        <a href="#">前端/小程序/JS</a>
+                    </li>
+                    <li>
+                        <a href="#">后端/JAVA/Python</a>
+                    </li>
+                    <li>
+                        <a href="#">运维/测试/数据库</a>
+                    </li>
+                    <li>
+                        <a href="#">移动/Android/iOS</a>
+                    </li>
+                    <li>
+                        <a href="#">云计算/大数据/容器</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-title">帮助与支持
+                    </li>
+                    <li>
+                        <a href="#">管理控制台</a>
+                    </li>
+                    <li>
+                        <a href="#">新技术查询</a>
+                    </li>
+                    <li>
+                        <a href="#">课程开课申请</a>
+                    </li>
+                    <li>
+                        <a href="#">课程控制台</a>
+                    </li>
+                    <li>
+                        <a href="#">优化与提升</a>
+                    </li>
+                    <li>
+                        <a href="#">课程售卖</a>
+                    </li>
+                    <li>
+                        <a href="#">支持计划</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-title">关于我们
+                    </li>
+                    <li>
+                        <a href="#">公司简介</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="#">发展历程</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻动态</a>
+                    </li>
+                    <li>
+                        <a href="#">校园招聘</a>
+                    </li>
+                    <li>
+                        <a href="#">友情链接</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-title">其他
+                    </li>
+                    <li>
+                        <a href="#">开发者中心</a>
+                    </li>
+                    <li>
+                        <a href="#">开发者课堂</a>
+                    </li>
+                    <li>
+                        <a href="#">考试认证</a>
+                    </li>
+                    <li>
+                        <a href="#">开放实验室</a>
+                    </li>
+                    <li>
+                        <a href="#">举报中心</a>
+                    </li>
+                    <li>
+                        <a href="#">定价</a>
+                    </li>
+                    <li>
+                        <a href="#">意见反馈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cloud-copyright cloud-copyright-about">
+        <p>Copyright © 2019-2020 www.junzi.com. All Rights Reserved. 君子资料网版权所有</p>
+        <p>
+            《中华人民共和国网络业务经营许可证》京ICP备5201314号-3 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5201314号-3</a>
+            地址：重庆市永川区重庆纹理学院红河校区A区
+
+        </p>
+    </div>
+</div>
+
+<a class="ce" href="#top">
+    <i class="iconfont" style="font-size: 25px">&#xe659;</i>
+</a>
+
+<script type="text/javascript">
+    $(".icon-blog").mouseenter(function() {
+        $(".wei-bo").show()
+    }).mouseleave(function() {
+        $(".wei-bo").hide()
+    });
+    $(".icon-wei").mouseenter(function() {
+        $(".wei-xin").show()
+    }).mouseleave(function() {
+        $(".wei-xin").hide()
+    });
+</script>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/course-list.js"></script>
+</body>
+</html>

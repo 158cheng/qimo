@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>个人管理</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/dibu.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<link rel="stylesheet" href="font_993831_u1aeht2zt3/iconfont.css">
+<!--<link rel="stylesheet" type="text/css" href="css/global.css">-->
+<!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<style type="text/css">
+    /*去除轮播图的阴影部分*/
+
+    .carousel-control.left {
+
+        background-image:none;
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    }
+    .carousel-control.right {
+        left: auto;
+        right: 0;
+
+        background-image:none;
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    }
+    .page1{
+        background-image: url(images/bg.jpg);
+        /*background-color: yellow;*/
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+    .page1 .container h1{
+        margin-top: 50px;
+    }
+    .page1 .container p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .page1 .container button{
+        margin-top: 30px;
+    }
+    /*合作大学*/
+    .cooperation {
+        height: 930px;
+        min-width: 1200px;
+        text-align: center;
+        size: 25px;
+        /*background-image: url("images/banner/banner1.jpg");*/
+    }
+    .cooperation_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .cooperation_row img {
+        margin-right: 88px
+    }
+
+    .cooperation_row img:last-child {
+        margin-right: 0
+    }
+    #test {
+        animation: change 10s linear 0s infinite;
+    }
+    .cooperation h3{
+        font-size: 50px;
+    }
+    @keyframes change {
+        0% {
+            color: #333;
+        }
+        25% {
+            color: #ff0;
+        }
+        50% {
+            color: #f60;
+        }
+        75% {
+            color: #cf0;
+        }
+        100% {
+            color: #f00;
+        }
+</style>
+</head>
+<body style="background: #eeeeee">
+    <!--导航start-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">学习资料网</a>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right" id="daohang">
+                    <li><a href="course-buy.html">课程购买</a></li>
+                    <li><a href="course-list.html">课程列表</a></li>
+                    <li><a href="course-play.html">课程播放</a></li>
+                    <li><a href="course-collect.html">课程收藏</a></li>
+                </ul>
+            </div>
+            <!--导航-->
+        </div>
+    </nav>
+    <!--导航end-->
+
+    <!--轮播图start-->
+    <div id="myCarousel" class="carousel slide" style="margin-top: 70px">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/banner/banner1.jpg" alt="First slide">
+                <div class="carousel-caption">知识改变世界</div>
+            </div>
+            <div class="item">
+                <img src="images/banner/banner2.jpg" alt="Second slide">
+                <div class="carousel-caption">知识改变世界</div>
+            </div>
+            <div class="item">
+                <img src="images/banner/banner3.jpg" alt="Third slide">
+                <div class="carousel-caption">知识改变世界</div>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--轮播图end-->
+
+    <!--正文内容-->
+    <div class="container" id="main_ari">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/高等数学.jpg" alt="高等数学" style="width: 545px;height: 100%">
+                    <div class="caption">
+                        <h3>高等数学</h3>
+                        <p>君子资料课程团队</p>
+                        <footer>
+                            <span class="tooltip-test" data-toggle="tooltip"
+                                  data-placement="left" title="西安电子科技大学">
+                                <img src="images/西安电子科技大学.jpg" class="img-circle" style="width: 50px;height: 50px">
+                            </span>
+                            西安电子科技大学
+                            <time>&nbsp;|&nbsp;1931年&nbsp;|&nbsp;</time>
+                            985高校&nbsp;
+                            <div class="btn-group" >
+                                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="你可以给我留言哟"><span class="glyphicon glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/线性代数.jpg" alt="线性代数" style="width: 545px;height: 100%">
+                    <div class="caption">
+                        <h3>线性代数</h3>
+                        <p>君子资料课程团队</p>
+                        <footer>
+                            <!--尾田荣一郎的图片-->
+
+                            <span class="tooltip-test" data-toggle="tooltip"
+                                  data-placement="left" title="湖南工业大学">
+                                <img src="images/湖南工业大学.jpg" class="img-circle" style="width: 50px;height: 50px">
+                            </span>
+                            湖南工业大学
+                            <time>&nbsp;|&nbsp;1979年&nbsp;|&nbsp;</time>
+                            普通高校&nbsp;
+                            <div class="btn-group" >
+                                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="你可以给我留言哟"><span class="glyphicon glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/概率论.jpg" alt="概率论与数理统计" style="width: 545px;height: 100%">
+                    <div class="caption">
+                        <h3>概率论与数理统计</h3>
+                        <p>君子资料课程团队</p>
+                        <footer>
+                            <!--尾田荣一郎的图片-->
+                            <span class="tooltip-test" data-toggle="tooltip"
+                                  data-placement="left" title="电子科技大学">
+                                <img src="images/电子科技大学.jpg" class="img-circle" style="width: 50px;height: 50px">
+                            </span>
+                            电子科技大学
+                            <time>&nbsp;|&nbsp;1956年&nbsp;|&nbsp;</time>
+                            985高校&nbsp;
+                            <div class="btn-group" >
+                                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="你可以给我留言哟"><span class="glyphicon glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/大数据.png" alt="大数据技术与应用" style="width: 100%;height: 100%">
+                    <div class="caption">
+                        <h3>大数据技术与应用</h3>
+                        <p>君子资料课程团队</p>
+                        <footer>
+                            <!--尾田荣一郎的图片-->
+                            <span class="tooltip-test" data-toggle="tooltip"
+                                  data-placement="left" title="东北师范大学">
+                                <img src="images/东北师范大学.jpg" class="img-circle" style="width: 50px;height: 50px">
+                            </span>
+                            东北师范大学
+                            <time>&nbsp;|&nbsp;1946年&nbsp;|&nbsp;</time>
+                            985高校&nbsp;
+                            <div class="btn-group" >
+                                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="你可以给我留言哟"><span class="glyphicon glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/C语言.jpg" alt="C语言程序设计进阶" style="width: 545px;height: 100%">
+                    <div class="caption">
+                        <h3>C语言程序设计进阶</h3>
+                        <p>君子资料课程团队</p>
+                        <footer>
+                            <!--尾田荣一郎的图片-->
+
+                            <span class="tooltip-test" data-toggle="tooltip"
+                                  data-placement="left" title="浙江大学">
+                                <img src="images/浙江大学.jpg" class="img-circle" style="width: 50px;height: 50px">
+                            </span>
+                            浙江大学
+                            <time>&nbsp;|&nbsp;1897年&nbsp;|&nbsp;</time>
+                            985高校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="btn-group" >
+                                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="你可以给我留言哟"><span class="glyphicon glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="images/Python.png" alt="Python语言程序设计" style="width: 545px;height: 100%">
+                    <div class="caption">
+                        <h3>Python语言程序设计</h3>
+                        <p>君子资料课程团队</p>
+                        <footer>
+                            <!--尾田荣一郎的图片-->
+                            <span class="tooltip-test" data-toggle="tooltip"
+                                  data-placement="left" title="北京理工大学">
+                                <img src="images/北京理工大学.jpg" class="img-circle" style="width: 50px;height: 50px">
+                            </span>
+                            北京理工大学
+                            <time>&nbsp;|&nbsp;1940&nbsp;|&nbsp;</time>
+                            985高校&nbsp;
+                            <div class="btn-group" >
+                                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="你可以给我留言哟"><span class="glyphicon glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--轮播图加讨论-->
+    <div id="page1" class="page1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>君子资料学习网</h1>
+                    <p>汇集多所知名高校，知名导师，资料齐全。</p>
+                    <button type="button" class="btn btn-info btn-lg">了解详情</button>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8">
+                    <div id="myCarousel2" class="carousel slide">
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-6" style="margin-top: 60px">
+                                        <a href="#" class="thumbnail">
+                                            <div style="height: 250px">
+                                                <img src="images/mgg.png" class="img-circle" style="height: 40px;width: 40px;float: left">
+                                                <p style="float: left;line-height:40px;margin-top: 0;margin-left: 20px">袁胜明--金牌讲师</p>
+                                                <p style="clear: both;height: 200px;line-height: 200px;margin-left: 20px;font-size: 20px">谈谈中国特色社会主义道路......</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6" style="margin-top: 60px">
+                                        <a href="#" class="thumbnail">
+                                            <div style="height: 250px">
+                                                <img src="images/mgg.png" class="img-circle" style="height: 40px;width: 40px;float: left">
+                                                <p style="float: left;line-height:40px;margin-top: 0;margin-left: 20px">袁胜明--金牌讲师</p>
+                                                <p style="clear: both;height: 200px;line-height: 200px;margin-left: 20px;font-size: 20px">分析毛泽东思想的活的灵魂......</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-6" style="margin-top: 60px">
+                                    <a href="#" class="thumbnail">
+                                        <div style="height: 250px">
+                                            <img src="images/mgg.png" class="img-circle" style="height: 40px;width: 40px;float: left">
+                                            <p style="float: left;line-height:40px;margin-top: 0;margin-left: 20px">袁胜明--金牌讲师</p>
+                                            <p style="clear: both;height: 200px;line-height: 200px;margin-left: 20px;font-size: 20px">试分析数据结构的B树的含义......</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="margin-top: 60px">
+                                    <a href="#" class="thumbnail">
+                                        <div style="height: 250px">
+                                            <img src="images/mgg.png" class="img-circle" style="height: 40px;width: 40px;float: left">
+                                            <p style="float: left;line-height:40px;margin-top: 0;margin-left: 20px">袁胜明--金牌讲师</p>
+                                            <p style="clear: both;height: 200px;line-height: 200px;margin-left: 20px;font-size: 20px">谈谈Python中的OpenCV的理解......</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-6" style="margin-top: 60px">
+                                    <a href="#" class="thumbnail">
+                                        <div style="height: 250px">
+                                            <img src="images/mgg.png" class="img-circle" style="height: 40px;width: 40px;float: left">
+                                            <p style="float: left;line-height:40px;margin-top: 0;margin-left: 20px">袁胜明--金牌讲师</p>
+                                            <p style="clear: both;height: 200px;line-height: 200px;margin-left: 20px;font-size: 20px">谈谈中国特色社会主义道路......</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="margin-top: 60px">
+                                    <a href="#" class="thumbnail">
+                                        <div style="height: 250px">
+                                            <img src="images/mgg.png" class="img-circle" style="height: 40px;width: 40px;float: left">
+                                            <p style="float: left;line-height:40px;margin-top: 0;margin-left: 20px">袁胜明--金牌讲师</p>
+                                            <p style="clear: both;height: 200px;line-height: 200px;margin-left: 20px;font-size: 20px">谈谈中国特色社会主义道路......</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev" style="margin-left: -120px">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next" style="margin-right: -120px">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--合作大学-->
+    <div  class="cooperation" id="page9">
+        <div  class="container">
+            <h3 align="center" style="margin-top: 30px;margin-bottom: 100px" id="test">合作大学</h3>
+            <div  class="cooperation_row">
+                <img  src="images/浙江大学.jpg" width="183" height="183" class="img-circle">
+                <img  src="images/电子科技大学.jpg" width="183" height="183" class="img-circle">
+                <img  src="images/西安电子科技大学.jpg" width="183" height="183" class="img-circle">
+                <img  src="images/北京理工大学.jpg" width="183" height="183" class="img-circle">
+            </div>
+            <div  class="cooperation_row">
+                <img  src="images/湖南工业大学.jpg" width="183" height="183" class="img-circle">
+                <img  src="images/东北师范大学.jpg" width="183" height="183" class="img-circle">
+                <img  src="images/复旦大学.jpg" width="183" height="183" class="img-circle">
+            </div>
+            <div  class="cooperation_row">
+                <img  src="images/北京大学.jpg" width="183" height="183" class="img-circle">
+                <img  src="images/清华大学.jpg" width="183" height="183" class="img-circle">
+            </div>
+            <div  class="cooperation_row">
+                <img  src="images/重庆文理学院.jpg" width="183" height="183" class="img-circle">
+            </div>
+        </div>
+    </div>
+    <!--底部栏start-->
+    <div class="cloud-banner">
+        <div class="cloud-bubble-one"></div>
+        <div class="cloud-bubble-two"></div>
+        <div class="cloud-bubble-three"></div>
+        <div class="cloud-bubble-text">为您提供全面的尊贵听课服务</div>
+        <div class="cloud-bubble-link">
+            <a href="#">免费注册</a>
+        </div>
+    </div>
+    <div class="cloud-footer">
+        <div class="cloud-footer-box">
+            <div class="cloud-footer-feature">
+                <ul class="clearfix">
+                    <li class="feature-item001">
+                        <a href="#">
+                            <span>7*24小时服务支持</span>
+                        </a>
+                    </li>
+                    <li class="feature-item002">
+                        <a href="#">
+                            <span>0元试听</span>
+                        </a>
+                    </li>
+                    <li class="feature-item003">
+                        <a href="#">
+                            <span>课程不满意100倍赔偿</span>
+                        </a>
+                    </li>
+                    <li class="feature-item004">
+                        <a href="#">
+                            <span>课程3天无理由退款</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cloud-footer-nav clearfix">
+                <div class="cloud-footer-nav-logo">
+                    <div class="cloud-comm">
+                        <div class="cloud-comm-logo">
+                            <span></span>
+                        </div>
+                        <div class="cloud-info">
+                            <p>学习资料网</p>
+                            <p>TEl:010-888-4000 (7x24h)</p>
+                        </div>
+                    </div>
+                    <div class="cloud-share">
+                        <p class="wei-xin">
+                            <span class="corner wx-corner"></span>
+                        </p>
+                        <p class="wei-bo">
+                            <span class="corner wx-corner"></span>
+                        </p>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-blog"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-wei"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-qq"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cloud-footer-nav-list clearfix">
+                    <ul>
+                        <li class="list-title">产品与服务
+                        </li>
+                        <li>
+                            <a href="#">前沿/区块连/人工智能</a>
+                        </li>
+                        <li>
+                            <a href="#">服务器托管</a>
+                        </li>
+                        <li>
+                            <a href="#">前端/小程序/JS</a>
+                        </li>
+                        <li>
+                            <a href="#">后端/JAVA/Python</a>
+                        </li>
+                        <li>
+                            <a href="#">运维/测试/数据库</a>
+                        </li>
+                        <li>
+                            <a href="#">移动/Android/iOS</a>
+                        </li>
+                        <li>
+                            <a href="#">云计算/大数据/容器</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">帮助与支持
+                        </li>
+                        <li>
+                            <a href="#">管理控制台</a>
+                        </li>
+                        <li>
+                            <a href="#">新技术查询</a>
+                        </li>
+                        <li>
+                            <a href="#">课程开课申请</a>
+                        </li>
+                        <li>
+                            <a href="#">课程控制台</a>
+                        </li>
+                        <li>
+                            <a href="#">优化与提升</a>
+                        </li>
+                        <li>
+                            <a href="#">课程售卖</a>
+                        </li>
+                        <li>
+                            <a href="#">支持计划</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">关于我们
+                        </li>
+                        <li>
+                            <a href="#">公司简介</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <a href="#">发展历程</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻动态</a>
+                        </li>
+                        <li>
+                            <a href="#">校园招聘</a>
+                        </li>
+                        <li>
+                            <a href="#">友情链接</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">其他
+                        </li>
+                        <li>
+                            <a href="#">开发者中心</a>
+                        </li>
+                        <li>
+                            <a href="#">开发者课堂</a>
+                        </li>
+                        <li>
+                            <a href="#">考试认证</a>
+                        </li>
+                        <li>
+                            <a href="#">开放实验室</a>
+                        </li>
+                        <li>
+                            <a href="#">举报中心</a>
+                        </li>
+                        <li>
+                            <a href="#">定价</a>
+                        </li>
+                        <li>
+                            <a href="#">意见反馈</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cloud-copyright cloud-copyright-about">
+            <p>Copyright © 2019-2020 www.junzi.com. All Rights Reserved. 君子资料网版权所有</p>
+            <p>
+                《中华人民共和国网络业务经营许可证》京ICP备5201314号-3 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5201314号-3</a>
+                地址：重庆市永川区重庆纹理学院红河校区A区
+
+            </p>
+        </div>
+    </div>
+    <!--底部栏end-->
+
+
+</body>
+<script type="text/javascript">
+
+    $(".icon-blog").mouseenter(function() {
+        $(".wei-bo").show()
+    }).mouseleave(function() {
+        $(".wei-bo").hide()
+    });
+    $(".icon-wei").mouseenter(function() {
+        $(".wei-xin").show()
+    }).mouseleave(function() {
+        $(".wei-xin").hide()
+    });
+
+
+</script>
+</html>

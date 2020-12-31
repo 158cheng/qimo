@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/dibu.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../font_993831_d7u8v1y7znt/iconfont.css">
+    <!--动态边框-->
+    <style type="text/css">
+        h3{
+            font-weight: bold;
+        }
+        .c-btn {
+            color:#ffffff;
+            display:inline-block;
+            height:100%;
+            position:relative;
+            text-decoration:none;
+        }
+        .c-btn::after {
+            content:"";
+            display:block;
+            position:absolute;
+        }
+        .c-btn::before {
+            content:"";
+            display:block;
+            position:absolute;
+        }
+        .c-btn--border-line {
+            background:rgba(0,0,0,0) none repeat scroll 0 0;
+            border:0 none;
+            box-shadow:0 0 0 0 transparent inset;
+            box-sizing:border-box;
+        }
+        .c-btn--border-line::after,.c-btn--border-line::before {
+            border:2px solid transparent;
+            box-sizing:border-box;
+            height:0;
+            width:0;
+        }
+        .c-btn--border-line::after {
+            left:0;
+            top:0;
+            transition:border-color 0s ease-in 0.8s,width 0.2s ease-in 0.6s,height 0.2s ease-in 0.4s;
+        }
+        .c-btn--border-line::before {
+            bottom:0;
+            right:0;
+            transition:border-color 0s ease-in 0.4s,width 0.2s ease-in 0.2s,height 0.2s ease-in 0s;
+        }
+        .c-btn--border-line:hover::after,.c-btn--border-line:hover::before {
+            height:100%;
+            width:100%;
+        }
+        .c-btn--border-line:hover::after {
+            border-right-color:red;
+            border-top-color:#367dff;
+            transition:width 0.2s ease-out 0s,height 0.2s ease-out 0.2s;
+        }
+        .c-btn--border-line:hover::before {
+            border-bottom-color:red;
+            border-left-color:#367dff;
+            transition:border-color 0s ease-out 0.4s,width 0.2s ease-out 0.4s,height 0.2s ease-out 0.6s;
+        }
+        .c-btn--line::after {
+            background-color:#367dff;
+            bottom:0;
+            transform:scaleX(0);
+            transform-origin:right center 0;
+            transition:transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s,-webkit-transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s;
+        }
+        .c-btn--line:hover::after {
+            transform:scaleX(1);
+            transform-origin:left center 0;
+            transition:transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s,-webkit-transform 0.6s cubic-bezier(0.55,0,0.1,1) 0s;
+        }
+        .nav-zi a {
+            width:200px;
+            border:1px solid #ededed;
+            display:block;
+            height:40px;
+            line-height:40px;
+            margin-left:50%;
+            margin-right:10px;
+            margin-top: 20px;
+            padding-left:20px;
+            padding-right:20px;
+            transition:all 0.6s ease-in 0s;
+            color:black;
+            font-weight: bold;
+        }
+        .cover-fields a,.jz a {
+            color:#69696d;
+        }
+        .c-btn--border-line {
+            background:rgba(0,0,0,0) none repeat scroll 0 0;
+            border:0 none;
+            box-shadow:0 0 0 0 transparent inset;
+            box-sizing:border-box;
+        }
+        .c-btn {
+            color:#ffffff;
+            display:inline-block;
+            height:100%;
+            position:relative;
+            text-decoration:none;
+        }
+
+    </style>
+
+
+</head>
+<body style="background: #eeeeee">
+    <!--导航start-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../../index.html" class="navbar-brand">学习资料网</a>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right" id="daohang">
+                    <li><a href="../../课程管理/html/course-list.html">课程列表</a></li>
+                    <li><a href="../../课程管理/html/course-play.html">继续学习</a></li>
+                    <li><a href="../../课程管理/html/course-buy.html">资料购买</a></li>
+                    <li><a href="../../课程管理/html/course-collect.html">课程收藏</a></li>
+                </ul>
+            </div>
+            <!--导航-->
+        </div>
+    </nav>
+    <!--导航end-->
+    <!--个人计划-->
+    <div class="container" style="margin-top: 70px" id="biji">
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-3" style="text-align: center">
+                <img src="../images/北京大学.jpg" class="img-circle" style="height: 100px;width: 100px">
+            </div>
+            <div class="col-md-9" style="border: black solid 1px">
+                <h3 style="margin-top: 20px">马克思主义中国化实现了两次历史讯飞跃</h3>
+                <p style="margin-top: 30px;font-size: 18px">第1次历史讯飞跃发生在新民主主义革命时期（1919-1949）形成的毛泽东思想。
+                    第2次历史讯飞跃发生在社会主义进入改革开放的新时期，形成了邓小平理论，三个代表重要思想，
+                    科学发展观，习近平新时代中国特色社会主义思想在内的中国特色社会主义理论体系。</p>
+                <p style="text-align: right"><i class="iconfont">&#xe616;</i>2020-1-2</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-3" style="text-align: center">
+                <img src="../images/北京大学.jpg" class="img-circle" style="height: 100px;width: 100px">
+            </div>
+            <div class="col-md-9" style="border: black solid 1px">
+                <h3 style="margin-top: 20px">中国梦的科学内涵</h3>
+                <p style="margin-top: 30px;font-size: 18px">中国梦，事业宽广，内涵丰富，意蕴深远。习近平指出中国梦的本质是国家富强，民族振兴，人民幸福。
+                    1.中国梦是国家情怀，民族情怀，人民情怀，相统一的梦。<br>
+                    2.中国梦归根到底是人民的梦，人民是中国梦的主体，是中国梦的创造者和享有者。<br>
+                    3.中国梦是国家的梦，民族的梦，也是每一个中国人的梦。<br>
+                    4.中国梦与世界各国人民的美好梦想相通。
+                </p>
+                <p style="text-align: right"><i class="iconfont">&#xe616;</i>2020-1-1</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-3" style="text-align: center">
+                <img src="../images/北京大学.jpg" class="img-circle" style="height: 100px;width: 100px">
+            </div>
+            <div class="col-md-9" style="border: black solid 1px">
+                <h3 style="margin-top: 20px">一带一路建设对推动构建人类命运共同体具有重要意义和作用</h3>
+                <p style="margin-top: 30px;font-size: 18px">一是坚持引进来，走出去并重，深化双向投资合作。引进来和走出去是将一带一路国际合作的重要内容，如同车之两轮了之两翼，坚持两者运动，进一步挖掘双向投资潜力，促进要素自由流动，资源高效配置和收入场深度融合，为开放性世界经济注入新动能，继续稳步扩大对外投资，鼓励沿线国家来华投资，营造投资合作良好环境，促进贸易双向平衡。
+                    二是坚持共商共建共享原则，充分尊重各国差异，共同探讨符合各国国情的合作模式，深度对接有关国家和区域发展战略，实现优势互补，协同并进。
+                </p>
+                <p style="text-align: right"><i class="iconfont">&#xe616;</i>2020-1-1</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <caption>添加学习笔记</caption>
+                    <tbody>
+                    <tr>
+                        <td width="150">请输入笔记题目：</td>
+                        <td><input type="text" id="addtitle" width="300"></td>
+                    </tr>
+                    <tr>
+                        <td>请输入笔记内容：</td>
+                        <td><textarea rows="3" cols="20" id="addcontent"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>请输入创建时间：</td>
+                        <td><input type="text" id="addtime"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </div>
+    <!--添加内容-->
+    <div class="nav-zi" style="text-align: center">
+        <a class="c-btn c-btn--border-line" id="add">添加学习笔记</a>
+    </div>
+    <!--底部栏start-->
+    <div class="cloud-banner" style="margin-top: 20px">
+        <div class="cloud-bubble-one"></div>
+        <div class="cloud-bubble-two"></div>
+        <div class="cloud-bubble-three"></div>
+        <div class="cloud-bubble-text">为您提供全面的尊贵听课服务</div>
+        <div class="cloud-bubble-link">
+            <a href="#">免费注册</a>
+        </div>
+    </div>
+    <div class="cloud-footer">
+        <div class="cloud-footer-box">
+            <div class="cloud-footer-feature">
+                <ul class="clearfix">
+                    <li class="feature-item001">
+                        <a href="#">
+                            <span>7*24小时服务支持</span>
+                        </a>
+                    </li>
+                    <li class="feature-item002">
+                        <a href="#">
+                            <span>0元试听</span>
+                        </a>
+                    </li>
+                    <li class="feature-item003">
+                        <a href="#">
+                            <span>课程不满意100倍赔偿</span>
+                        </a>
+                    </li>
+                    <li class="feature-item004">
+                        <a href="#">
+                            <span>课程3天无理由退款</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cloud-footer-nav clearfix">
+                <div class="cloud-footer-nav-logo">
+                    <div class="cloud-comm">
+                        <div class="cloud-comm-logo">
+                            <span></span>
+                        </div>
+                        <div class="cloud-info">
+                            <p>学习资料网</p>
+                            <p>TEl:010-888-4000 (7x24h)</p>
+                        </div>
+                    </div>
+                    <div class="cloud-share">
+                        <p class="wei-xin">
+                            <span class="corner wx-corner"></span>
+                        </p>
+                        <p class="wei-bo">
+                            <span class="corner wx-corner"></span>
+                        </p>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-blog"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-wei"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-qq"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-mail"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cloud-footer-nav-list clearfix">
+                    <ul>
+                        <li class="list-title">产品与服务
+                        </li>
+                        <li>
+                            <a href="#">前沿/区块连/人工智能</a>
+                        </li>
+                        <li>
+                            <a href="#">服务器托管</a>
+                        </li>
+                        <li>
+                            <a href="#">前端/小程序/JS</a>
+                        </li>
+                        <li>
+                            <a href="#">后端/JAVA/Python</a>
+                        </li>
+                        <li>
+                            <a href="#">运维/测试/数据库</a>
+                        </li>
+                        <li>
+                            <a href="#">移动/Android/iOS</a>
+                        </li>
+                        <li>
+                            <a href="#">云计算/大数据/容器</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">帮助与支持
+                        </li>
+                        <li>
+                            <a href="#">管理控制台</a>
+                        </li>
+                        <li>
+                            <a href="#">新技术查询</a>
+                        </li>
+                        <li>
+                            <a href="#">课程开课申请</a>
+                        </li>
+                        <li>
+                            <a href="#">课程控制台</a>
+                        </li>
+                        <li>
+                            <a href="#">优化与提升</a>
+                        </li>
+                        <li>
+                            <a href="#">课程售卖</a>
+                        </li>
+                        <li>
+                            <a href="#">支持计划</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">关于我们
+                        </li>
+                        <li>
+                            <a href="#">公司简介</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <a href="#">发展历程</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻动态</a>
+                        </li>
+                        <li>
+                            <a href="#">校园招聘</a>
+                        </li>
+                        <li>
+                            <a href="#">友情链接</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-title">其他
+                        </li>
+                        <li>
+                            <a href="#">开发者中心</a>
+                        </li>
+                        <li>
+                            <a href="#">开发者课堂</a>
+                        </li>
+                        <li>
+                            <a href="#">考试认证</a>
+                        </li>
+                        <li>
+                            <a href="#">开放实验室</a>
+                        </li>
+                        <li>
+                            <a href="#">举报中心</a>
+                        </li>
+                        <li>
+                            <a href="#">定价</a>
+                        </li>
+                        <li>
+                            <a href="#">意见反馈</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cloud-copyright cloud-copyright-about">
+            <p>Copyright © 2019-2020 www.junzi.com. All Rights Reserved. 君子资料网版权所有</p>
+            <p>
+                《中华人民共和国网络业务经营许可证》京ICP备5201314号-3 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">5201314号-3</a>
+                地址：重庆市永川区重庆纹理学院红河校区A区
+
+            </p>
+        </div>
+    </div>
+    <!--底部栏end-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#add").click(function () {
+                var addtitle = $("#addtitle").val();
+                var addcontent = $("#addcontent").val();
+                var addtime = $("#addtime").val();
+                $("#biji").prepend("<div class=\"row\" style=\"margin-top: 20px\">\n" +
+                    "            <div class=\"col-md-3\" style=\"text-align: center\">\n" +
+                    "                <img src=\"../images/北京大学.jpg\" class=\"img-circle\" style=\"height: 100px;width: 100px\">\n" +
+                    "            </div>\n" +
+                    "            <div class=\"col-md-9\" style=\"border: black solid 1px\">\n" +
+                    "                <h3 style=\"margin-top: 20px\">" + addtitle + "</h3>\n" +
+                    "                <p style=\"margin-top: 30px;font-size: 18px\">"+ addcontent + "\n" +
+                    "                </p>\n" +
+                    "                <p style=\"text-align: right\"><i class=\"iconfont\">&#xe616;</i>" + addtime + "</p>\n" +
+                    "            </div>\n" +
+                    "        </div>")
+            })
+        })
+    </script>
+
+
+
+</body>
+</html>

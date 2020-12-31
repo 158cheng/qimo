@@ -1,0 +1,23 @@
+{
+  "id": "993831",
+  "name": "学院官网",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5222585",
+      "name": "足球",
+      "font_class": "zuqiu",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "9512515",
+      "name": "闹钟",
+      "font_class": "clock",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

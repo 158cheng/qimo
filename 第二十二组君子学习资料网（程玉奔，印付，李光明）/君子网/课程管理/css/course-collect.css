@@ -1,0 +1,377 @@
+.bg-other {
+    background:#00aaff;
+    background-size: cover;
+}
+.user-head-info .user-info {
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+}
+.user-head-info .user-info .user-pic {
+    float: left;
+    width: 148px;
+    height: 148px;
+}
+.user-head-info .user-info .user-pic .user-pic-bg {
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    top: 24px;
+}
+.user-head-info .user-info .user-pic .user-pic-bg .img {
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.user-head-info .user-info .user-info-right {
+    float: right;
+    width: 980px;
+}
+.user-head-info .user-info .user-name {
+    font-weight: 600;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    line-height: 28px;
+    margin-top: 48px;
+}
+name span {
+    float: left;
+}
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.user-head-info .user-info .about-info {
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 6px;
+}
+.user-head-info .user-info .about-info span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+}
+.user-head-info .user-info .about-info span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+}
+.user-head-info .user-info .about-info a.more-user-info {
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    line-height: 16px;
+    display: inline-block;
+    height: 16px;
+    padding-left: 16px;
+    border-left: 2px solid rgba(255,255,255,.4);
+    cursor: pointer;
+}
+.user-head-info .user-info .about-info a.more-user-info i {
+    display: inline-block;
+    margin-right: 2px;
+}
+.user-head-info .user-info .user-sign {
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    width: 440px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.user-head-info .user-info .user-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    text-align: left;
+    margin-top: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    opacity: .5;
+    margin-left: 24px;
+}
+.user-head-info .study-info {
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    min-width: 200px;
+    text-align: right;
+}
+.user-head-info .study-info .follows {
+    margin-right: 24px;
+}
+.user-head-info .study-info .item {
+    line-height: 48px;
+    vertical-align: middle;
+    height: 48px;
+    float: left;
+}
+.user-head-info .study-info .item em {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(255,255,255,.8);
+    line-height: 28px;
+}
+.user-head-info .study-info .item span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    line-height: 20px;
+    margin-top: 4px;
+}
+.user-head-info .study-info .set-btn {
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 18px;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    line-height: 20px;
+    height: 20px;
+}
+.user-head-info .study-info .set-btn i {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 4px;
+}
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/*收藏*/
+.floor-side-list ul{
+    border-bottom: 2px solid #e1e4e7;
+    height: 50px;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: row;    /*主轴为水平方向，起点在左端*/
+    flex-wrap: nowrap;  /*默认不允许换行*/
+    justify-content:space-around;   /*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍*/
+    align-items: center;    /*垂直居中*/
+}
+.floor-side-list ul li{
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    height: 100%;
+    /*width: 100%;*/
+    display: block;
+    color: #545c63;
+}
+.floor-side-list ul li:hover{
+    color: #f20d0d;
+    border-bottom: 2px solid #f20d0d;
+}
+.on{
+    color: #f20d0d;
+    border-bottom: 2px solid #f20d0d;
+}
+.floor-side-body ul{
+    display:none;
+}
+.floor-side-body ul:first-child{
+    display:block;
+}
+
+/*选项卡body*/
+.course-detail{
+    width: 100%;
+    box-sizing: border-box;
+}
+.detail-item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px;
+}
+.img-box{
+    margin: 0 50px 0 50px;
+}
+.title{
+    height: 50px;
+}
+.info-box{
+    width: 100%;
+    border-bottom: 2px solid #e1e4e7;
+}
+.mian{
+    background: #f5f7fa;
+    border-radius: 2px;
+    width: 62px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    color: #9199a1;
+    font-weight: 400;
+    margin-right: 12px;
+}
+.er{
+    font-size: 28px;
+    color: #07111b;
+    font-weight: 700;
+    line-height: 36px;
+    max-width: 315px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.er:hover{
+    text-decoration: none;
+    font-size: 28px;
+    color: #07111b;
+    font-weight: 700;
+    line-height: 36px;
+    max-width: 315px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.study-info{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.study-info .i-left{
+    color: #f20d0d;
+}
+.span-common{
+    line-height: 24px;
+    font-size: 18px;
+    color: #4d555d;
+    margin-right: 24px;
+}
+
+.catog-points{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.points-btn1{
+    border: 1px solid #9199a1;
+    transition: all .3s;
+    position: absolute;
+    right: 250px;
+    width: 104px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #545c63;
+    font-weight: 400;
+    background-color: transparent;
+    font-size: 16px;
+    margin-left: 200px;
+    border-radius: 18px;
+}
+.points-btn1:hover{
+    border: 1px solid black;
+}
+.points-btn2{
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    color: #fff;
+    width: 104px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(240,20,20,.6);
+    border-radius: 18px;
+    transition: all 0.3s;
+}
+.points-btn2:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #f20d0d;
+}
+.tui-img img{
+    width: 300px;
+    border-radius: 8px;
+}
+.tui{
+    width: 300px;
+}
+.tui div{
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+    color: #1c1f21;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    max-height: 44px;
+    overflow: hidden;
+}
+.none{
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+}
+.none i{
+    font-size: 48px;
+    color: #b2b8bd;
+    line-height: 48px;
+}
+.none p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #9199a1;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.none p span{
+    color:#f01400;
+    cursor: pointer;
+}
+.yin{
+    height: 100%;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+.yin:hover{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    transform: translateY(-6px);
+    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+}
+.ce{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    color: #bce8f1;
+}
